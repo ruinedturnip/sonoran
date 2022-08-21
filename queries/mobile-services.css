@@ -1,0 +1,288 @@
+@media (max-width: 87em) {
+  .service {
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 75em) {
+  .container {
+    width: 1000px;
+  }
+
+  .service {
+    font-size: 2.8rem;
+  }
+
+  .grid--footer {
+    margin: 0px 50px;
+  }
+
+  .service-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .container {
+    width: 800px;
+  }
+
+  .service-heading {
+    font-size: 2.8rem;
+  }
+
+  .service-text {
+    font-size: 1.4rem;
+  }
+
+  .service {
+    gap: 25px;
+  }
+
+  .service-img {
+    height: 250px;
+  }
+
+  .cta-btn {
+    font-size: 1.8rem;
+    width: 148px;
+  }
+
+  .cta-form {
+    row-gap: 1.6rem;
+  }
+  .cta-heading {
+    font-size: 2.4rem;
+  }
+
+  .cta-text {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .cta-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .cta-form input,
+  .cta-form select {
+    font-size: 1.2rem;
+  }
+
+  .foot-logo {
+    font-size: 3.2rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .container {
+    width: 600px;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem 4.8rem 2.4rem 4.8rem;
+  }
+  .cta-heading {
+    font-size: 1.8rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3.6rem;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    gap: 1.4rem;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    z-index: 20;
+
+    /* HIDE NAV */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .link-nav:link,
+  .link-nav:visited {
+    font-size: 3rem;
+    color: #333;
+  }
+  .fa-white {
+    background-color: white;
+  }
+
+  .fa-blue {
+    background-color: transparent;
+  }
+
+  .service {
+    padding: 0px;
+  }
+
+  .service-right {
+    width: 60%;
+  }
+
+  .service-img {
+    width: 275px;
+    height: auto;
+  }
+
+  .service-heading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    width: 400px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-img-box {
+    height: 200px;
+    width: 100%;
+  }
+
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .service {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .build {
+    flex-direction: column-reverse;
+  }
+
+  .service-heading {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .service-text {
+    font-size: 1.8rem;
+  }
+
+  .service-img {
+    width: 100%;
+  }
+  .services {
+    gap: 100px;
+  }
+
+  .service-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 25em) {
+  .container {
+    width: 275px;
+  }
+
+  .nav {
+    margin: 0px 46px;
+  }
+  .landing h2 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .service-heading {
+    font-size: 2.4rem;
+  }
+
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-btn {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .cta-heading {
+    margin-bottom: 10px;
+  }
+
+  .grid--footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem 3.2rem;
+  }
+  .footer-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}

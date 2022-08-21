@@ -1,0 +1,517 @@
+@media (max-width: 75em) {
+  .container {
+    width: 1000px;
+  }
+
+  .background_saguaro {
+    left: 400px;
+  }
+
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+
+  .hero-text {
+    font-size: 2.4rem;
+  }
+
+  .hero-form {
+  }
+
+  .form-input {
+    width: 150px;
+  }
+
+  .form-btn {
+    width: 150px;
+  }
+
+  .form-text {
+    font-size: 1.4rem;
+  }
+  .form-phone {
+    font-size: 1.8rem;
+  }
+
+  .pricing-content {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .container {
+    width: 800px;
+  }
+
+  .section-heading {
+    font-size: 3.2rem;
+  }
+
+  .testimonial-heading {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .nav h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    font-size: 1.8rem;
+    width: 148px;
+  }
+
+  .cta-form {
+    row-gap: 1.6rem;
+  }
+  .cta-heading {
+    font-size: 2.4rem;
+  }
+
+  .cta-text {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .cta-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .cta-form input,
+  .cta-form select {
+    font-size: 1.2rem;
+  }
+
+  .foot-logo {
+    font-size: 3.2rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+  }
+
+  .grid {
+    column-gap: 3.2rem;
+  }
+
+  .portfolio-cards {
+    flex-wrap: wrap;
+  }
+
+  .portfolio-card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 50em) {
+  .container {
+    width: 600px;
+  }
+
+  .section-heading {
+    line-height: 1.1;
+  }
+
+  .background_saguaro {
+    left: 50px;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem 4.8rem 2.4rem 4.8rem;
+  }
+  .cta-heading {
+    font-size: 1.8rem;
+  }
+
+  /* FOOTER NAV */
+  /* .foot-logo {
+    font-size: 2.4rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-link {
+    font-size: 1.4rem;
+  } */
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3.6rem;
+    margin: 0 auto;
+  }
+
+  .footer-nav {
+    gap: 1.4rem;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    z-index: 20;
+
+    /* HIDE NAV */
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .link-nav:link,
+  .link-nav:visited {
+    font-size: 3rem;
+    color: #333;
+  }
+  .fa-white {
+    background-color: white;
+  }
+
+  .fa-blue {
+    background-color: transparent;
+  }
+
+  /* HERO  */
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-form {
+    flex-direction: row;
+    margin: 30px 0px;
+    padding: 25px 75px;
+  }
+
+  .hero-text {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-heading {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .form-left {
+    margin-right: 50px;
+  }
+
+  .form-input {
+    width: 200px;
+    height: 30px;
+  }
+
+  .form-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 32px;
+    font-size: 1.8rem;
+  }
+
+  /* WHAT WE DO/ FEATURES */
+  .what-we-do {
+    margin-top: 260px;
+  }
+
+  .features {
+    margin-top: 60px;
+  }
+
+  .features-row {
+    flex-wrap: wrap;
+  }
+
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 250px;
+  }
+
+  /* PRICING */
+
+  .pricing {
+    flex-direction: column;
+    margin: 250px 94px;
+  }
+
+  .pricing-content {
+    margin-top: 30px;
+    margin-left: 0px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .pricing-list-heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .container {
+    width: 400px;
+  }
+
+  .hero-heading {
+    font-size: 3.8rem;
+  }
+
+  .hero-text {
+    font-size: 1.8rem;
+    margin-top: 15px;
+  }
+
+  .form-headshot {
+    height: 75px;
+    width: 75px;
+  }
+
+  .form-name {
+    font-size: 1.6rem;
+  }
+
+  .form-text {
+    font-size: 1.4rem;
+    color: rgba(200, 200, 200, 0.883);
+  }
+  .form-phone {
+    font-size: 1.6rem;
+    color: #edc48f;
+    margin-bottom: 30px;
+  }
+
+  .form-left {
+    width: 150px;
+  }
+
+  .form-input {
+    width: 150px;
+  }
+
+  .form-left {
+    margin-right: 25px;
+  }
+
+  .hero-form {
+    padding: 25px 25px;
+  }
+
+  .what-we-do p {
+    text-align: center;
+    line-height: 1.6;
+    width: 660px;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #646464;
+    width: 100%;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-img-box {
+    height: 200px;
+    width: 100%;
+  }
+
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+
+  .portfolio-card {
+    width: 300px;
+    height: 400px;
+  }
+
+  .portfolio-card p {
+    font-size: 1.4rem;
+    color: #646464;
+    margin-bottom: 20px;
+  }
+
+  .portfolio-img {
+    width: 200px;
+  }
+
+  .testimonial::before {
+    font-size: 15rem;
+  }
+
+  .section-heading {
+    font-size: 2.4rem;
+  }
+
+  .section-heading span {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-heading {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .testimonial_header {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.4rem;
+  }
+
+  .testimonial_photo {
+    width: 4.5rem;
+  }
+
+  .dots {
+    display: none;
+  }
+}
+
+@media (max-width: 25em) {
+  .nav {
+    margin: 0px 46px;
+  }
+  .container {
+    width: 275px;
+  }
+
+  .hero-heading {
+    font-size: 2.8rem;
+    letter-spacing: 0.5px;
+  }
+  .hero-form {
+    flex-direction: column;
+  }
+
+  .form-left {
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  .what-we-do {
+    font-size: 1.4rem;
+    margin-top: 320px;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+  .section-heading span {
+    font-size: 2rem;
+  }
+
+  .pricing {
+    margin: 150px 46px;
+  }
+
+  .pricing-content h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .pricing-content h2 span {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .pricing-content p {
+    font-size: 1.4rem;
+  }
+
+  .pricing-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon {
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+  }
+
+  .testimonial-heading {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .testimonial::before {
+    display: none;
+  }
+
+  .testimonial-author {
+    margin-left: 0px;
+  }
+  .testimonial_header {
+    font-size: 1.5rem;
+  }
+  .cta-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .cta-btn {
+    align-self: center;
+    margin-top: 10px;
+  }
+  .cta-text-box {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .cta-heading {
+    margin-bottom: 10px;
+  }
+
+  .grid--footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-heading {
+    font-size: 2rem;
+  }
+}
