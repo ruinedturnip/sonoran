@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0ae45b2d7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries/mobile-home.css"/>
+    <title>Evan's Personal Portfolio</title>
+  </head>
+  <body>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     LANDING                  /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+    <section class="landing">
+      <nav class="nav nav-open">
+        <h1>Sonoran Studios</h1>
+        <div class="main-nav">
+
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a class="link-nav" href="index.html">Home</a>
+            </li>
+            <li class="nav-link">
+              <a class="link-nav" href="about.html">About</a>
+            </li>
+            <li class="nav-link">
+              <a class="link-nav" href="services.html">Services</a>
+            </li>
+            <li class="nav-link">
+              <a class="link-nav" href="#link">Portfolio</a>
+            </li>
+          </ul>
+          <button class="cta-btn">Get Online</button>
+        </div>
+
+        <button class="btn-mobile-nav">
+         
+       
+          <i class="fa-solid fa-bars icon-mobile-nav fa-blue" name="menu-outline"></i>
+
+          <i class="fa-solid fa-xmark icon-mobile-nav fa-white" name="close-outline"></i>
+        </button>
+      </nav>
+
+      <div class="hero container">
+        <div class="hero-left">
+          <h2 class="hero-heading">
+            Web development <br />for small businesses that need an identity
+          </h2>
+          <p class="hero-text">
+            We build high quality, affordable websites that customers will love,
+            generating you leads and improving your profits.
+          </p>
+        </div>
+        <form class="hero-form" action="POST" data-netlify-="true">
+          <div class="form-left">
+            <img
+              class="form-headshot"
+              src="imgs/headshot.png"
+              alt="Headshot of Evan Nye"
+            />
+            <p class="form-name">Evan Nye</p>
+            <p class="form-text">Founder & Lead Dev.</p>
+            <p class="form-phone">(520) 591-6428</p>
+          </div>
+          <div class="form-input-row">
+
+            <label for="fname" class="form-label">Name</label>
+            <input
+            type="text"
+            id="fname"
+            name="fname"
+            class="form-input"
+            required
+            />
+            <label for="email" class="form-label">Email</label>
+            <input
+            type="text"
+            id="email"
+            name="email"
+            class="form-input"
+            require
+            />
+            <label for="phone" class="form-label">Phone Number</label>
+            <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-[0-9]"
+            class="form-input"
+            required
+            />
+            <input type="submit" value="Submit" class="form-btn" />
+          </div>
+        </form>
+      </div>
+      <img
+        src="imgs/untitled-1.svg"
+        alt=""
+        class="landing-swish"
+        aria-hidden="true"
+      />
+   
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+      ///////////                     WHAT WE DO                  /////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////////// -->
+      
+      <!-- <img
+      src="imgs/cactus.svg"
+      alt=""
+      class="cactus"
+        aria-hidden="true"
+      /> -->
+      <section class="section what-we-do container">
+        <h2 class="section-heading"><span>What</span> we do</h2>
+      <p class="section-text">
+        We build engaging, high converting websites that get your business online and generate you sales.
+        <a class="link-blue-subpage" href="#">LEARN MORE</a>
+      </p>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     FEATURES                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <section class="section features container">
+      <div class="features-row">
+        <div class="feature-1">
+          <i class="fa-solid fa-mobile-screen icon c"></i>
+          <h4 class="feature-title">Responsive</h4>
+          <p class="feature-txt">
+            It is 2022 and 80% of your audience uses a smartphone. We'll build a
+            website that looks great on mobile phones, tablets, desktops, and
+            everything in between.
+          </p>
+        </div>
+        <div class="feature-2">
+          <i class="fa-solid fa-bolt-lightning icon d"></i>
+          <h4 class="feature-title">Optimized</h4>
+          <p class="feature-txt">
+            Your website will be hand-coded, meaning no wasted code slowing your
+            website down. Your website will be lightning quick, improving Google
+            search results.
+          </p>
+        </div>
+        <div class="feature-3">
+          <i class="fa-solid fa-palette icon e"></i>
+          <h4 class="feature-title">Customized</h4>
+          <p class="feature-txt">
+            We'll work with you during the entire design process so you have the
+            website you've always wanted. We will make a website that shares
+            your brands story.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Pricing                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="section pricing">
+      <picture>
+        <img
+          src="imgs/desert-img.svg"
+          class="pricing-img"
+          alt="man at computer"
+        />
+      </picture>
+      <div class="pricing-content">
+        <h2 class="section-heading">
+          <span>Effective</span> websites that make you money 
+        </h2>
+        <p class="section-text">
+          Your website is the first impression your company makes on potential customers. Outdated, poorly designed, or broken websites lose you business and money. Our websites are professionally designed and customers will actualy enjoy visiting.
+        <ul class="pricing-list">
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"> </i>
+              <h3 class="pricing-list-heading">24/7 Customer Service</h3>
+            </div>
+            <p>
+              24 hours 7 days a week service to fix errors, answer questions, or
+              make changes
+            </p>
+          </li>
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"> </i>
+              <h3 class="pricing-list-heading">Customizable</h3>
+            </div>
+
+            <p>We will customize the website to your preferences and tastes.</p>
+          </li>
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"> </i>
+
+              <h3 class="pricing-list-heading">Google analytics</h3>
+            </div>
+            <p>
+              We will install google analytics so you can track website traffic
+              to make better business decisions.
+            </p>
+          </li>
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"></i>
+              <h3 class="pricing-list-heading">Affordable pricing</h3>
+            </div>
+            <p>We charge reasonable rates, based on reasonable packages</p>
+          </li>
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"></i>
+              <h3 class="pricing-list-heading">Modern Technologies</h3>
+            </div>
+            <p>We build websites using the web's latest technologies, improving speed and performance.</p>
+          </li>
+          <li>
+            <div class="list-top-row">
+              <i class="fa-solid fa-check icon"></i>
+              <h3 class="pricing-list-heading">Maintanence included</h3>
+            </div>
+            <p>We will train you how to maintain your website, and will always fix broken code to keep you online.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     PORTFOLIO                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+  
+    <section class="section portfolio container" id="link">
+      <h2 class="section-heading port"><span>Our</span> Portfolio</h2>
+      <div class="portfolio-cards">
+        
+        <div class="portfolio-card">
+          <img src="/imgs/Asset-2.png" class="background_saguaro"
+          />
+          <img
+            src="imgs/Screen Shot 2022-06-12 at 1.28.13 PM.png"
+            alt="Omnifood"
+            class="portfolio-img"
+          />
+          <h3 class="project-title">Omnifood</h3>
+          <p class="portfolio-text">
+            A responsive website for a meal plan company with clean design that
+            generates sales for the business.
+          </p>
+          <button href="#" class="portfolio-btn">Visit Site</button>
+        </div>
+        <div class="portfolio-card">
+          <img
+            src="imgs/Screen Shot 2022-06-12 at 1.28.13 PM.png"
+            alt="Omnifood"
+            class="portfolio-img"
+          />
+          <h3 class="project-title">Omnifood</h3>
+          <p class="portfolio-text">
+            A responsive website for a meal plan company with clean design that
+            generates sales for the business.
+          </p>
+          <button href="#" class="portfolio-btn">Visit Site</button>
+        </div>
+        <div class="portfolio-card">
+          <img
+            src="imgs/Screen Shot 2022-06-12 at 1.28.13 PM.png"
+            alt="Omnifood"
+            class="portfolio-img"
+          />
+          <h3 class="project-title">Omnifood</h3>
+          <p class="portfolio-text">
+            A responsive website for a meal plan company with clean design that
+            generates sales for the business.
+          </p>
+          <button href="#" class="portfolio-btn">Visit Site</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Testimonials                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="section testimonials">
+      <h2 class="section-heading testimonial-heading">
+        <span>Testimonials</span> (WHAT THEY WOULD SAY...)
+      </h2>
+      <div class="testimonial-content">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h4 class="testimonial_header">Best Web Designer Ever</h4>
+            <blockquote class="testimonial-text">
+              I could not be happier with the website that Sonoran Studios built
+              for me. They were speedy in the delivery of the website, and
+              worked with me to really understand my brand identity and
+              incorporate it throughout my website. With their help, my sales
+              increased 72% in just 6 months.
+            </blockquote>
+            <address class="testimonial-author">
+              <img src="imgs/user-1.jpeg" class="testimonial_photo" />
+              <h5 class="testimonial-name">Sam Brown</h5>
+              <p class="testimonial-location">Arlington, VA</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h4 class="testimonial_header">Beatiful Website for Cheap</h4>
+            <blockquote class="testimonial-text">
+              As a small business owner, its incredibly important that money
+              spent is worth it. Without a doubt, the Sonoran Studio website
+              plan is 100% worth the investment. I have a beautiful, mobile
+              friendly, AND affordable website!
+            </blockquote>
+            <address class="testimonial-author">
+              <img src="imgs/user-2.jpeg" class="testimonial_photo" />
+              <h5 class="testimonial-name">John Smith</h5>
+              <p class="testimonial-location">Washington, DC</p>
+            </address>
+          </div>
+        </div>
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h4 class="testimonial_header">Cannot recommend enough!</h4>
+            <blockquote class="testimonial-text">
+              Sonoran Studios just gets it! You can tell they put in the time to
+              make sure your website is pixel-perfect, runs smoothly, and looks
+              great on any device. Incredibly pleasant to work with too!
+            </blockquote>
+            <address class="testimonial-author">
+              <img src="imgs/user-3.jpeg" class="testimonial_photo" />
+              <h5 class="testimonial-name">Cyrus Cole</h5>
+              <p class="testimonial-location">Tucson, AZ</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     CTA                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="section section-cta">
+      <div class="container flex-center">
+
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="section-heading cta-heading">Do you need a website?</h2>
+            <p class="cta-text">
+              Get a fast, well-designed, and affordable website today. Generate
+              sales and boost your profits. I will work with you throughout the
+              entire process.
+            </p>
+            
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                id="full-name"
+                type="text"
+                placeholder="Your name"
+                required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                required
+                />
+              </div>
+              
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Please choose one option</option>
+                  <option value="Friends">Friends and family</option>
+                  <option value="Direct">Direct Outreach</option>
+                  <option value="Facebook ad">Facebook ad</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <button class="btn cta-btn">Get in touch</button>
+            </form>
+          </div>
+          <div
+          class="cta-img-box"
+          role="img"
+          aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+  </main>
+  <footer class="section footer">
+
+    <div class="container grid grid--footer foot-text">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <h1 class="foot-logo">Sonoran Studios</h1>
+        </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#"
+              ><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"
+              ><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"
+              ><i class="fa-brands fa-twitter"></i></a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          Copyright &copy; 2027 by Sonoran Studios. All rights reserved.
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            1029 N. George Mason Dr.
+          </p>
+          <p>
+            <a class="footer-link" href="tel:415-201-6370">(520) 591-6428</a
+            ><br />
+            <a class="footer-link" href="mailto:evan.sonoranstudios@gmail.com"
+              >evan.sonoranstudios@gmail.com</a
+            >
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Home</a></li>
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Services</a></li>
+          <li><a class="footer-link" href="#">Portfolio</a></li>
+
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Services</p>
+        <ul class="footer-nav">
+          <li><a class="footer-link" href="#">Web Design</a></li>
+          <li><a class="footer-link" href="#">Website Maintenance</a></li>
+          <li><a class="footer-link" href="#">Content Creation</a></li>
+          <li><a class="footer-link" href="#">SEO Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+  </html>
