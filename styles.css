@@ -214,7 +214,18 @@ body {
   margin-bottom: 30px;
 }
 
-form div {
+.form-input-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-div {
   display: flex;
   flex-direction: column;
   /* margin: 0 auto; */
