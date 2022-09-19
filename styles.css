@@ -466,6 +466,7 @@ body {
 .portfolio-btn:hover {
   transition: all 0.4s;
   background: linear-gradient(to right bottom, #519ff3 0, #a8c5ed 96%);
+  cursor: pointer;
 }
 
 .background_saguaro {
