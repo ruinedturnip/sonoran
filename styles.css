@@ -175,6 +175,7 @@ body {
   width: 300px;
   margin-bottom: 15px;
   height: 30px;
+  padding-left: 5px;
 }
 
 .form-btn {
@@ -209,6 +210,7 @@ body {
 .form-text {
   font-size: 1.6rem;
   color: rgba(200, 200, 200, 0.883);
+  padding-left: 5px;
 }
 .form-phone {
   font-size: 2rem;
@@ -719,9 +721,6 @@ body {
 .cta-form input::placeholder,
 .cta-form select {
   color: #aaa;
-}
-
-.cta-form select::content {
 }
 
 .cta-text-box form div {

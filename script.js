@@ -1,27 +1,27 @@
 "use strict";
-//////////////////////////////////////////////////////////
-// /////   REVEAL SECTION            /////////////////////
-// ///////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////
+// // /////   REVEAL SECTION            /////////////////////
+// // ///////////////////////////////////////////////////////
 
-const allSections = document.querySelectorAll(".section");
+// const allSections = document.querySelectorAll(".section");
 
-const revealSections = function (entries, observer) {
-  const [entry] = entries;
+// const revealSections = function (entries, observer) {
+//   const [entry] = entries;
 
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove("section--hidden");
-  observer.unobserve(entry.target);
-};
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove("section--hidden");
+//   observer.unobserve(entry.target);
+// };
 
-const sectionObserver = new IntersectionObserver(revealSections, {
-  root: null,
-  threshold: 0.15,
-});
+// const sectionObserver = new IntersectionObserver(revealSections, {
+//   root: null,
+//   threshold: 0.15,
+// });
 
-allSections.forEach(function (section) {
-  sectionObserver.observe(section);
-  section.classList.add("section--hidden");
-});
+// allSections.forEach(function (section) {
+//   sectionObserver.observe(section);
+//   section.classList.add("section--hidden");
+// });
 
 //////////////////////////////////////////////////////////
 // /////   Mobile NAV            /////////////////////////////
@@ -31,6 +31,7 @@ const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navEl = document.querySelector(".nav");
 
 btnNavEl.addEventListener("click", function () {
+  event.preventDefault();
   navEl.classList.toggle("nav-open");
 });
 

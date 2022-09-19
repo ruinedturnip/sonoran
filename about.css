@@ -10,7 +10,9 @@ html {
   background-color: #fff;
 }
 
+html,
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -276,9 +278,6 @@ body {
 .cta-form input::placeholder,
 .cta-form select {
   color: #aaa;
-}
-
-.cta-form select::content {
 }
 
 .cta-text-box form div {
