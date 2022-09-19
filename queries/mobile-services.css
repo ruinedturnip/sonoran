@@ -27,6 +27,10 @@
     width: 800px;
   }
 
+  .nav h1 {
+    font-size: 1.8rem;
+  }
+
   .service-heading {
     font-size: 2.8rem;
   }
