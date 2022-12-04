@@ -30,8 +30,8 @@
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navEl = document.querySelector(".nav");
 
-btnNavEl.addEventListener("click", function () {
-  event.preventDefault();
+btnNavEl.addEventListener("click", function (e) {
+  e.preventDefault();
   navEl.classList.toggle("nav-open");
 });
 
