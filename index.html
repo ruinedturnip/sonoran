@@ -129,12 +129,18 @@
            </div>
          </div>
         </div>
-        <img
-        src="imgs/untitled-1.svg"
-        alt="background image"
-        class="landing-swish"
-        aria-hidden="true"
-        />
+
+        
+        <picture>
+          <source media="(max-width: 600px)" srcset="/imgs/swish2.svg">
+          <source media="(max-width: 600px)" srcset="/imgs/untitled-1.svg">
+          <img
+          src="imgs/untitled-1.svg"
+          alt="background image"
+          class="landing-swish"
+          aria-hidden="true"
+          />
+        </picture>
         
       </section>
       <!-- ///////////////////////////////////////////////////////////////////////////////////
@@ -192,6 +198,8 @@
           src="imgs/desert-img.svg"
           class="pricing-img"
           alt="man at computer"
+          height="276px"
+          width="457px"
         />
       </picture>
       <div class="pricing-content">
