@@ -9,9 +9,18 @@
       crossorigin="anonymous"
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
-      rel="stylesheet"
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
+<noscript>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet"
+        type="text/css"
     />
+</noscript>
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="queries/mobile-about.css"/>
 
@@ -54,7 +63,7 @@
     ////////////////////////////////////////////////////////////////////////////////////// -->
     <section class="section about container">
       <picture class="about__headshot">
-          <img src="/imgs/me-converted.webp" alt="photo of Evan Nye-- lead web developer" class="img__headshot">
+          <img src="/imgs/me-converted.webp" alt="photo of Evan Nye-- lead web developer" class="img__headshot" height="600px" width="450px">
       </picture>
       <div class="about__text">
         <h2 class="section-heading about_heading"> A <span>self taught</span> web developer</h2>
@@ -137,15 +146,15 @@
 
         <ul class="social-links">
           <li>
-            <a class="footer-link" href="#"
+            <a class="footer-link" href="#" aria-label="Instagram"
               ><i class="fa-brands fa-instagram"></i></a>
           </li>
           <li>
-            <a class="footer-link" href="#"
+            <a class="footer-link" href="#" aria-label="Facebook"
               ><i class="fa-brands fa-facebook"></i></a>
           </li>
           <li>
-            <a class="footer-link" href="#"
+            <a class="footer-link" href="#" aria-label="Twitter"
               ><i class="fa-brands fa-twitter"></i></a>
           </li>
         </ul>
@@ -174,10 +183,10 @@
       <nav class="nav-col">
         <p class="footer-heading">Navigation</p>
         <ul class="footer-nav">
-          <li><a class="footer-link" href="index.html">Home</a></li>
-          <li><a class="footer-link" href="#">About</a></li>
-          <li><a class="footer-link" href="services.html">Services</a></li>
-          <li><a class="footer-link" href="index.html">Portfolio</a></li>
+          <li><a class="footer-link" href="#" aria-label="home">Home</a></li>
+          <li><a class="footer-link" href="about.html" aria-label="about">About</a></li>
+          <li><a class="footer-link" href="services.html" aria-label="services">Services</a></li>
+          <li><a class="footer-link" href="#link" aria-label="portfolio">Portfolio</a></li>
 
         </ul>
       </nav>
@@ -185,10 +194,10 @@
       <nav class="nav-col">
         <p class="footer-heading">Services</p>
         <ul class="footer-nav">
-          <li><a class="footer-link" href="services.html">Web Design</a></li>
-          <li><a class="footer-link" href="services.html">Website Maintenance</a></li>
-          <li><a class="footer-link" href="services.html">Content Creation</a></li>
-          <li><a class="footer-link" href="services.html">SEO Services</a></li>
+          <li><a class="footer-link" href="services.html" aria-label="Services">Web Design</a></li>
+          <li><a class="footer-link" href="services.html" aria-label="Services">Website Maintenance</a></li>
+          <li><a class="footer-link" href="services.html" aria-label="Services">Content Creation</a></li>
+          <li><a class="footer-link" href="services.html" aria-label="Services">SEO Services</a></li>
         </ul>
       </nav>
     </div>
