@@ -687,7 +687,7 @@ body {
       rgb(53, 144, 243, 0.35),
       rgb(143, 184, 237, 0.35)
     ),
-    url("../imgs/website.jpeg");
+    url("../imgs/website-converted.webp");
   background-size: cover;
   background-position: center;
 }
