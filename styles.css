@@ -517,6 +517,7 @@ body {
 //////////////////////////////////////////////////////////////////////////////////////*/
 .portfolio {
   margin-bottom: 120px;
+
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -527,6 +528,8 @@ body {
 .portfolio-cards {
   display: flex;
   align-items: center;
+  /* width: 1200px; */
+  flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
 }
@@ -551,6 +554,7 @@ body {
   text-align: center;
   transition: all 0.4s;
   position: relative;
+  width: 350px;
 }
 
 .portfolio-card:hover {
