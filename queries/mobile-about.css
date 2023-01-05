@@ -178,6 +178,18 @@
     width: 400px;
   }
 
+  .landing h2 {
+    color: #fff;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .about {
     flex-direction: column;
   }

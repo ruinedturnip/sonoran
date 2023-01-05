@@ -29,31 +29,57 @@
   </head>
   <body>
     <section class="landing">
-      <nav class="nav nav-open">
-        <h1>Sonoran Studios</h1>
+      <div class="overlay overlay-slide-left hide" id="overlay">
+        <nav class="mobile-nav">
+          <h1 class="mobile-logo">Sonoran Studios</h1>
+         
+            <ul class="mobile-nav-links">
+              <li class="nav-link mobile-nav-link" id="nav-1">
+                <a class=" mobile-link-nav" href="index.html">Home</a>
+              </li>
+              <li class="nav-link mobile-nav-link" id="nav-2">
+                <a class=" mobile-link-nav" href="about.html">About</a>
+              </li>
+              <li class="nav-link mobile-nav-link" id="nav-3">
+                <a class=" mobile-link-nav " href="services.html">Services</a>
+              </li>
+              <li class="nav-link mobile-nav-link" id="nav-4">
+                <a class="mobile-link-nav" href="#link">Portfolio</a>
+              </li>
+             <li class="nav-link mobile-nav-link" id="nav-5"> <a class="cta-btn" id="nav-5">Get Online</a></li>
+      
+            </ul>
+          
+        </nav>
+        <!-- Menu Items -->
+        
+      </div>
+      
+      <!-- Header Nav -->
+      <nav class="nav">
+        <a class="logo-link" href='index.html'><h1 id="logo">Sonoran Studios</h1></a>
         <div class="main-nav">
-
           <ul class="nav-links">
-            <li class="nav-link">
+            <li class="nav-link" id="nav-1">
               <a class="link-nav" href="index.html">Home</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link" id="nav-2">
               <a class="link-nav" href="about.html">About</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link" id="nav-3">
               <a class="link-nav" href="services.html">Services</a>
             </li>
-            <li class="nav-link">
-              <a class="link-nav" href="index.html">Portfolio</a>
+            <li class="nav-link" id="nav-4">
+              <a class="link-nav" href="#portfolio">Portfolio</a>
             </li>
           </ul>
-          <button class="cta-btn">Get Online</button>
         </div>
-
-        <button class="btn-mobile-nav">
-          <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
-          <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
-        </button>
+      
+        <div class="menu-bars hide" id="menu-bars">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div> 
       </nav>
 
       <h2>About Us</h2>
@@ -203,6 +229,6 @@
       </nav>
     </div>
   </footer>
-    <script src="script.js"></script>
+    <script src="about.js"></script>
   </body>
   </html>
