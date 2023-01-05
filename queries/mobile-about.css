@@ -47,6 +47,14 @@
     font-size: 1.8rem;
   }
 
+  .icons {
+    padding: 0 25px;
+  }
+
+  .about--icon {
+    font-size: 50px;
+  }
+
   .cta-btn {
     font-size: 1.8rem;
     width: 148px;
@@ -240,6 +248,14 @@
 
   .landing h2 {
     font-size: 2.8rem;
+  }
+
+  .icons {
+    padding: 0 5px;
+  }
+
+  .about--icon {
+    font-size: 30px;
   }
 
   .img__headshot {

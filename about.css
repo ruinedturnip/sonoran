@@ -313,6 +313,19 @@ body {
   color: #646464;
 }
 
+.icons {
+  padding: 0 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about--icon {
+  font-size: 75px;
+  color: #3590f3;
+}
+
 /*///////////////
 ///////////                     CTA                    /////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////*/
