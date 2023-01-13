@@ -301,6 +301,10 @@ body {
   gap: 40px;
 }
 
+.about--2 {
+  flex-direction: row-reverse;
+}
+
 .about__headshot {
   position: relative;
 }
