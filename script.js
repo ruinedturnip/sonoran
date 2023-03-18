@@ -70,8 +70,105 @@ if (screenWidth <= 896) {
   menuBar.classList.toggle("hide");
   menuBar.addEventListener("click", toggleNav);
 }
+
 //////////////////////////////////////////////////////////
-// /////   SLIDER            /////////////////////////////
+// /////   Portfolio            /////////////////////////////
+// ///////////////////////////////////////////////////////
+// const gallery = document.getElementById("gallery");
+// const portfolio = document.getElementById("portfolio");
+// let moveVal = 0;
+
+// let dragging = false,
+//   mouseLocation,
+//   galleryLocation;
+
+// const easeOutQuad = (t) => {
+//   return t * (2 - t);
+// };
+
+// let moveGallery = () => {
+//   moveVal = easeOutQuad((window.scrollY * 0.003) / 2);
+//   gallery.style.transform = ` translateX(${moveVal}%)`;
+//   console.log(moveVal);
+//   requestAnimationFrame(moveGallery);
+// };
+
+// requestAnimationFrame(moveGallery);
+
+// const handleOnDown = (e) => (portfolio.dataset.mouseDownAt = e.clientX);
+
+// const handleOnUp = () => {
+//   portfolio.dataset.mouseDownAt = "0";
+//   portfolio.dataset.prevPercentage = portfolio.dataset.percentage;
+// };
+
+// const handleOnMove = (e) => {
+//   if (portfolio.dataset.mouseDownAt === "0") return;
+
+//   const mouseDelta = parseFloat(portfolio.dataset.mouseDownAt) - e.clientX,
+//     maxDelta = window.innerWidth / 2;
+
+//   const percentage = (mouseDelta / maxDelta) * -100,
+//     nextPercentageUnconstrained =
+//       parseFloat(portfolio.dataset.prevPercentage) + percentage,
+//     nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+//   portfolio.dataset.percentage = nextPercentage;
+
+//   portfolio.animate(
+//     {
+//       transform: `translate(${nextPercentage}%, -50%)`,
+//     },
+//     { duration: 1200, fill: "forwards" }
+//   );
+
+//   for (const image of portfolio.getElementsByClassName("image")) {
+//     image.animate(
+//       {
+//         objectPosition: `${100 + nextPercentage}% center`,
+//       },
+//       { duration: 1200, fill: "forwards" }
+//     );
+//   }
+// };
+
+// /* -- Had to add extra lines for touch events -- */
+
+// window.onmousedown = (e) => handleOnDown(e);
+
+// window.ontouchstart = (e) => handleOnDown(e.touches[0]);
+
+// window.onmouseup = (e) => handleOnUp(e);
+
+// window.ontouchend = (e) => handleOnUp(e.touches[0]);
+
+// window.onmousemove = (e) => handleOnMove(e);
+
+// window.ontouchmove = (e) => handleOnMove(e.touches[0]);
+
+// const dragStart = (e) => {
+//   dragging = true;
+//   mouseLocation = e.pageX;
+//   galleryLocation = portfolio.scrollLeft;
+// };
+
+// const dragStop = (e) => {
+//   dragging = false;
+//   mouseLocation = e.pageX;
+//   galleryLocation = portfolio.scrollLeft;
+// };
+
+// const dragActive = (e) => {
+//   if (!dragging) return;
+//   let offset = e.pageX - mouseLocation;
+//   portfolio.scrollLeft = galleryLocation - offset;
+// };
+
+// gallery.addEventListener("mousedown", dragStart);
+// gallery.addEventListener("mousemove", dragActive);
+// gallery.addEventListener("mouseup", dragStop);
+// //////////////////////////////////////////////////////////
+// /////   Testimonials            /////////////////////////////
 // ///////////////////////////////////////////////////////
 
 const slider = function () {

@@ -30,8 +30,31 @@
     font-size: 1.8rem;
   }
 
+  .pricing {
+    flex-direction: column;
+  }
+
+  .pricing-img-1 {
+    top: 0;
+    left: -125px;
+  }
+
+  .pricing-img-2 {
+    top: -100px;
+    left: 150px;
+  }
+  .pricing-img-3 {
+    top: 0;
+    right: -125px;
+  }
+
+  .pricing-img-container {
+    height: 400px;
+    width: 800px;
+  }
+
   .pricing-content {
-    margin-left: 100px;
+    margin-left: 0px;
   }
 }
 
@@ -113,6 +136,37 @@
 
   .portfolio-card {
     width: 350px;
+  }
+
+  .pricing {
+    margin: 125px;
+  }
+
+  .pricing-img-1 {
+    top: 0;
+    left: 25px;
+  }
+
+  .pricing-img-2 {
+    top: -50px;
+    left: 175px;
+  }
+  .pricing-img-3 {
+    top: 0;
+    right: 25px;
+  }
+
+  .pricing-img-container {
+    height: 300px;
+    width: 700px;
+  }
+
+  .pricing-img {
+    width: 300px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    /* top: 25%; */
   }
 }
 
@@ -303,6 +357,37 @@
   .pricing-list-heading {
     font-size: 1.6rem;
   }
+
+  .pricing {
+    margin: 125px;
+  }
+
+  .pricing-img-1 {
+    top: 0;
+    left: 25px;
+  }
+
+  .pricing-img-2 {
+    top: -50px;
+    left: 175px;
+  }
+  .pricing-img-3 {
+    top: 0;
+    right: 25px;
+  }
+
+  .pricing-img-container {
+    height: 200px;
+    width: 600px;
+  }
+
+  .pricing-img {
+    width: 250px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    /* top: 25%; */
+  }
 }
 
 @media (max-width: 37.5em) {
@@ -428,6 +513,37 @@
   .dots {
     display: none;
   }
+
+  .pricing {
+    margin: 125px;
+  }
+
+  .pricing-img-1 {
+    top: -25px;
+    left: -25px;
+  }
+
+  .pricing-img-2 {
+    top: -50px;
+    left: 175px;
+  }
+  .pricing-img-3 {
+    top: 0;
+    right: 25px;
+  }
+
+  .pricing-img-container {
+    height: 200px;
+    width: 400px;
+  }
+
+  .pricing-img {
+    width: 250px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    /* top: 25%; */
+  }
 }
 
 @media (max-width: 28.125em) {
@@ -528,5 +644,32 @@
 
   .footer-heading {
     font-size: 2rem;
+  }
+
+  .pricing-img-1 {
+    top: -75px;
+    left: 25px;
+  }
+
+  .pricing-img-2 {
+    top: -0px;
+    left: 125px;
+  }
+  .pricing-img-3 {
+    top: -75px;
+    right: 50px;
+  }
+
+  .pricing-img-container {
+    height: 100px;
+    width: 400px;
+  }
+
+  .pricing-img {
+    width: 150px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    /* top: 25%; */
   }
 }
