@@ -772,8 +772,7 @@ html {
         font-style: italic;
       }
     }
-    &__field {
-    }
+
     &__label {
       font-size: a.$p-font-size;
       font-weight: 500;
@@ -782,14 +781,7 @@ html {
     &__input {
       font-size: a.$p-font-size;
     }
-    &__butons {
-      &--1 {
-      }
-      &--2 {
-      }
-      &--3 {
-      }
-    }
+
     &__button {
       &__label {
         font-size: a.$p-font-size;
