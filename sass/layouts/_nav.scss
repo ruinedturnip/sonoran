@@ -7,7 +7,7 @@
 
   height: 7rem;
   margin: 0 auto;
-
+  z-index: 15;
   // position: relative;
 
   @include a.respond(tab-port) {
@@ -29,6 +29,7 @@
     align-items: center;
     gap: 3.6rem;
     list-style: none;
+    z-index: inherit;
   }
 
   &__link {
