@@ -88,6 +88,10 @@
     @include a.respond(tab-port) {
       transform: translateY(-10rem);
     }
+
+    @include a.respond(phone) {
+      background-image: url("/imgs/home/mobile/hero-mobile.webp");
+    }
   }
 }
 

@@ -958,6 +958,11 @@ html {
     transform: translateY(-10rem);
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .hero__img {
+    background-image: url("/imgs/home/mobile/hero-mobile.webp");
+  }
+}
 
 .about {
   position: relative;
