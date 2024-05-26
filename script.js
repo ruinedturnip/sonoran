@@ -27,6 +27,7 @@
 // /////   Mobile NAV            /////////////////////////////
 // ///////////////////////////////////////////////////////
 
+// console.log("hello worlds");
 const overlay = document.getElementById("overlay");
 const nav1 = document.getElementById("nav-1");
 const nav2 = document.getElementById("nav-2");
@@ -36,7 +37,12 @@ const nav5 = document.getElementById("nav-5");
 
 const nav = [nav1, nav2, nav3, nav4, nav5];
 
-const menuBar = document.getElementById("menu-bars");
+const menuBar = document.getElementById("menuBars");
+const navList = document.getElementById("navList");
+
+const barOne = document.getElementById("bar1");
+const barTwo = document.getElementById("bar2");
+const barThree = document.getElementById("bar3");
 
 let screenWidth = screen.width;
 
@@ -57,18 +63,22 @@ let screenWidth = screen.width;
 
 function toggleNav() {
   menuBar.classList.toggle("change");
+
   overlay.classList.toggle("hide");
 }
 
-function overlayAnimation(dir1, dir2) {
-  overlay.forEach((nav, i) => {
-    nav.classList.replace(`slide-${dir1}-${i + 1}`, `slide-${dir2}-${i + 1}`);
-  });
-}
+// function overlayAnimation(dir1, dir2) {
+//   overlay.forEach((nav, i) => {
+//     nav.classList.replace(`slide-${dir1}-${i + 1}`, `slide-${dir2}-${i + 1}`);
+//   });
+// }
 
-if (screenWidth <= 896) {
+if (screenWidth <= 900) {
   menuBar.classList.toggle("hide");
   menuBar.addEventListener("click", toggleNav);
+  navList.style.setProperty("display", "none");
+  // navList.style.opacity = "0";
+  // navList.style.width = "1px";
 }
 
 //////////////////////////////////////////////////////////
@@ -172,7 +182,7 @@ if (screenWidth <= 896) {
 // ///////////////////////////////////////////////////////
 
 const slider = function () {
-  const slides = document.querySelectorAll(".slide");
+  const slides = document.querySelectorAll(".testimonial__slide");
   const btnLeft = document.querySelector(".slider__btn--left");
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");

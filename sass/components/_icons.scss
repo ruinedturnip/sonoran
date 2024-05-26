@@ -1,0 +1,16 @@
+@use "../abstracts/" as a;
+
+.icons {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include a.respond(tab-small) {
+    width: 90%;
+  }
+
+  @include a.respond(phone-small) {
+    width: 80%;
+  }
+}

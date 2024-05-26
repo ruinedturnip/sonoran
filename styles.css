@@ -279,9 +279,22 @@ body {
   margin-top: 45px;
 }
 
+.hero-left {
+  width: 50%;
+}
+
+.hero-right {
+  width: 50%;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* 
 .hero-form {
   z-index: 7;
-  /* margin-top: 70px; */
+
   margin-left: 15px;
   background-color: hsl(0, 0%, 0%, 45%);
   border-radius: 10px;
@@ -365,10 +378,10 @@ body {
 .form-div {
   display: flex;
   flex-direction: column;
-  /* margin: 0 auto; */
+
   align-items: center;
   justify-content: center;
-}
+} */
 
 .landing-swish {
   z-index: 5;

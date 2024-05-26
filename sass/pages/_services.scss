@@ -1,0 +1,17 @@
+@use "../abstracts/" as a;
+.services {
+  &__landing {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(53, 144, 243, 0.35),
+        rgba(143, 184, 237, 0.35)
+      ),
+      url("../imgs/shared/desert-converted.webp");
+    background-position: 50% 70%;
+    height: 30rem;
+  }
+
+  &__service {
+    margin-bottom: 10rem;
+  }
+}

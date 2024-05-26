@@ -1,0 +1,204 @@
+@use "../abstracts/" as a;
+
+.contact {
+  &__boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+
+    @include a.respond(tab-port) {
+      flex-direction: column-reverse;
+    }
+  }
+  // FORM BOX
+  &__formbox {
+    width: 50%;
+    background-color: a.$primary--blue;
+    border-radius: 8px;
+    padding: 30px;
+
+    @include a.respond(tab-port) {
+      width: 100%;
+    }
+
+    &__inner {
+    }
+
+    &__textbox {
+      width: 100%;
+    }
+  }
+
+  // FORM
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    &__label {
+    }
+    &__input {
+      height: 3rem;
+      padding: 0rem 1rem;
+      border: none;
+      border-radius: 8px;
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &--1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      &--2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      &--3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    &__button {
+      height: 2rem;
+      width: 2rem;
+      &__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &__textarea {
+      height: 10rem;
+      padding: 1rem 1rem;
+      border: none;
+      resize: none;
+      border-radius: 8px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__submit {
+      height: 4rem;
+      width: 15rem;
+      align-self: flex-end;
+
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background-color: a.$secondary--gold;
+
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: a.$secondary--orange;
+      }
+    }
+  }
+
+  //   INFOBOX
+
+  &__infobox {
+    width: 50%;
+    height: 65rem;
+    // background-color: rgba(48, 105, 178, 0.09);
+    border-radius: 8px;
+    padding: 30px;
+
+    @include a.respond(tab-port) {
+      height: auto;
+      padding-top: 0;
+    }
+    @include a.respond(tab-port) {
+      width: 100%;
+    }
+    &__textbox {
+      padding: 2rem 0rem 2rem 0rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      @include a.respond(phone) {
+        gap: 2rem;
+      }
+    }
+
+    &__contact-box {
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      @include a.respond(tab-port) {
+        flex-direction: row;
+      }
+
+      @include a.respond(phone) {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+    &__email {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &__phone {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &__location {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    &__quote {
+      padding-bottom: 4rem;
+      border-bottom: 3px solid a.$primary--blue;
+      // background-color: a.$white;
+      &--author {
+        margin-left: 2rem;
+      }
+
+      &--photo {
+        border-radius: 50%;
+        border: 2px solid a.$primary--blue;
+      }
+
+      &__authorbox {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__buttons {
+    }
+  }
+}

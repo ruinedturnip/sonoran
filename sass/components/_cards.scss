@@ -1,0 +1,139 @@
+@use "../abstracts/" as a;
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 10rem;
+
+  @include a.respond(tab-land) {
+    gap: 3rem;
+
+    margin-top: 5rem;
+  }
+  @include a.respond(tab-port) {
+    flex-direction: column;
+    // margin: 0 auto;
+    // display: grid;
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-template-row: repeat(2, 1fr);
+  }
+}
+.card {
+  width: 30%;
+  display: flex;
+
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid rgba(48, 105, 178, 0.2);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+
+  @include a.respond(tab-port) {
+    width: 50%;
+  }
+
+  @include a.respond(phone) {
+    width: 90%;
+    gap: 3rem;
+  }
+
+  &__header {
+    height: 4rem;
+    background-color: a.$secondary--blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--2 {
+      background-color: a.$secondary--orange;
+    }
+  }
+
+  &__pricing {
+    text-align: center;
+  }
+
+  &__price {
+    span {
+      position: relative;
+      &::before {
+        content: "$";
+        position: absolute;
+        top: 0;
+        left: -2rem;
+      }
+    }
+  }
+  &__text {
+    font-size: a.$p-font-size;
+    color: a.$secondary--black;
+    margin-top: 2.4rem;
+  }
+
+  &__button {
+    width: 90%;
+    height: 5rem;
+    border-radius: 8px;
+    border: 2px solid a.$secondary--blue;
+    cursor: pointer;
+    background-color: a.$white;
+    outline: none;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: a.$secondary--blue;
+    }
+
+    &--fill {
+      background-color: a.$secondary--orange;
+      border: 2px solid a.$secondary--orange;
+
+      &:hover {
+        background-color: a.$white;
+      }
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    gap: 3rem;
+    // width: 70%;
+    li {
+      display: flex;
+      width: 100%;
+      //   justify-content: space-between;
+      gap: 5rem;
+      align-items: center;
+    }
+  }
+
+  &--2 {
+    transform: translateY(-5rem);
+    z-index: 5;
+
+    @include a.respond(tab-port) {
+      transform: none;
+    }
+  }
+
+  &--3 {
+    position: relative;
+    &::after {
+      content: url("../../imgs/shared/asset-2converted.webp");
+      opacity: 0.1;
+      position: absolute;
+      z-index: -15;
+      bottom: 75%;
+      right: -10rem;
+    }
+  }
+}

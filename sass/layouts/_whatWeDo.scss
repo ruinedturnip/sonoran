@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+
+.what-we-do {
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__text {
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    @include a.respond(tab-port) {
+      width: 80%;
+    }
+
+    @include a.respond(phone-small) {
+      width: 95%;
+
+      margin-top: 2rem;
+    }
+  }
+}
+
+/* WAVES TEST */

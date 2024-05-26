@@ -1,0 +1,212 @@
+@use "../abstracts/" as a;
+
+.section {
+  &__landing {
+    position: relative;
+    background-color: a.$primary--blue;
+    height: 95vh;
+    // clip-path: polygon(0% 0%, 0% 100%, 100% 20%, 100% 0%);
+    @include a.respond(tab-port) {
+      height: 125vh;
+    }
+
+    @include a.respond(phone) {
+      height: 100%;
+    }
+  }
+
+  &__what-we-do {
+    background-color: a.$white;
+  }
+
+  &__boxes {
+    margin-top: 16rem;
+  }
+
+  &__feature {
+    margin: 10rem 0rem 0rem 0rem;
+    padding-bottom: 15rem;
+
+    @include a.respond(tab-land) {
+      padding-bottom: 2rem;
+    }
+
+    @include a.respond(phone-small) {
+      margin-top: 7rem;
+    }
+  }
+
+  &__pricing {
+    margin-top: 30rem;
+    background-color: a.$primary--blue;
+    position: relative;
+
+    @include a.respond(tab-small) {
+      margin-top: 15rem;
+    }
+
+    &::after {
+      content: "";
+      background-color: a.$primary--blue;
+      position: absolute;
+      top: -24%;
+      left: -5px;
+      width: 102vw;
+      height: 20rem;
+      rotate: -2deg;
+
+      @include a.respond(tab-land) {
+        top: -10%;
+      }
+    }
+    &::before {
+      content: "";
+      background-color: a.$primary--blue;
+      position: absolute;
+      bottom: -4%;
+      left: -6px;
+      width: 102vw;
+      height: 20rem;
+      rotate: -2deg;
+
+      @include a.respond(tab-small) {
+        bottom: -5%;
+      }
+    }
+  }
+
+  &__portfolio {
+    margin-top: 15rem;
+
+    @include a.respond(phone-small) {
+      margin-top: 10rem;
+    }
+  }
+
+  &__testimonial {
+    margin: 15rem 0rem;
+
+    @include a.respond(phone-small) {
+      margin: 10rem 0rem;
+    }
+  }
+
+  &__about {
+    margin-top: 15rem;
+
+    @include a.respond(phone-small) {
+      margin-top: 10rem;
+    }
+  }
+
+  &__cards {
+  }
+
+  &__cta {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  &__footer {
+    padding: 12.8rem 0;
+    background: linear-gradient(
+      to right bottom,
+      a.$primary--blue 0,
+      a.$secondary--blue 96%
+    );
+
+    @include a.respond(tab-port) {
+      padding: 6.4rem 0;
+    }
+  }
+}
+
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+:root {
+  --primary--1: #016de1;
+  --primary--2: #3069b2;
+
+  --secondary--1: #ff9700;
+  --secondary--2: #fba31e;
+}
+
+// /* utility classes */
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+
+.flex-center {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+/*/////////////// 
+  ///////////                     Footer                    /////////////////////////
+  //////////////////////////////////////////////////////////////////////////////////////*/
+
+/* WAVES TEST */
+
+.waves {
+  position: relative;
+  width: 100%;
+  /* height: 40vh; */
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.waves__div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}

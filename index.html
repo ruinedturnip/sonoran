@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name=description content="Sonoran Studios Web Design. Evan Nye. 2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link
     rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
-<noscript>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
-        rel="stylesheet"
-        type="text/css"
-    />
-</noscript>
     <script defer
       src="https://kit.fontawesome.com/0ae45b2d7e.js"
       crossorigin="anonymous"
@@ -26,8 +21,9 @@
       href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     /> -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="queries/mobile-home.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+<!-- 
+    <link rel="stylesheet" href="queries/mobile-home.css"/> -->
     <title>Sonoran Studios Web Development</title>
   </head>
   <body>
@@ -35,629 +31,608 @@
     ///////////                     LANDING                  /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
     <main>
-    <section class="landing">
+     <section class="section section__landing">
+        <nav class="container nav">
+            <a href="#" class="nav__logo">Sonoran Studios</a>
+              <ul class="nav__links " id="navList">
+                <li class="nav__link nav__link--active" id="nav-1">
+                  <a class="nav__link-nav" href="index.html">Home</a>
+                </li>
+                <li class="nav__link" id="nav-2">
+                  <a class="nav__link-nav" href="about.html">About</a>
+                </li>
+                <li class="nav__link" id="nav-3">
+                  <a class="nav__link-nav" href="services.html">Services</a>
+                </li>
+                <li class="nav__link" id="nav-4">
+                  <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav__link" id="nav-4">
+                  <a class="nav__link-nav" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
 
-<!-- Mobile Nav -->
-<div class="overlay overlay-slide-left hide" id="overlay">
-  <nav class="mobile-nav">
-    <h1 class="mobile-logo">Sonoran Studios</h1>
-   
-      <ul class="mobile-nav-links">
-        <li class="nav-link mobile-nav-link" id="nav-1">
-          <a class=" mobile-link-nav" href="index.html">Home</a>
-        </li>
-        <li class="nav-link mobile-nav-link" id="nav-2">
-          <a class=" mobile-link-nav" href="about.html">About</a>
-        </li>
-        <li class="nav-link mobile-nav-link" id="nav-3">
-          <a class=" mobile-link-nav " href="services.html">Services</a>
-        </li>
-        <li class="nav-link mobile-nav-link" id="nav-4">
-          <a class="mobile-link-nav" href="#link">Portfolio</a>
-        </li>
-       <li class="nav-link mobile-nav-link" id="nav-5"> <a class="cta-btn" id="nav-5">Get Online</a></li>
+              <div class="nav__mobile hide" id="menuBars">
+                <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
+                <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
+                <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
+              </div>
+        
+              <div class="mobile hide" id="overlay">
+                <ul class="mobile__links " id="navList">
+                  <li class="mobile__link">
+                    <h2 class="mobile__link--title" >Sonoran Studios</a>
+                  </li>
+                  <li class="mobile__link mobile__link--active" id="nav-1">
+                    <a class="mobile__link--nav" href="index.html">Home</a>
+                  </li>
+                  <li class="mobile__link" id="nav-2">
+                    <a class="mobile__link--nav" href="about.html">About</a>
+                  </li>
+                  <li class="mobile__link" id="nav-3">
+                    <a class="mobile__link--nav" href="services.html">Services</a>
+                  </li>
+                  <li class="mobile__link" id="nav-4">
+                    <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="mobile__link" id="nav-4">
+                    <a class="mobile__link--nav" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              
+          </nav>
 
-      </ul>
-    
-  </nav>
-  <!-- Menu Items -->
+        
+
+        
   
-</div>
-
-<!-- Header Nav -->
-<nav class="nav">
-  <h1 id="logo">Sonoran Studios</h1>
-  <div class="main-nav">
-    <ul class="nav-links">
-      <li class="nav-link" id="nav-1">
-        <a class="link-nav" href="index.html">Home</a>
-      </li>
-      <li class="nav-link" id="nav-2">
-        <a class="link-nav" href="about.html">About</a>
-      </li>
-      <li class="nav-link" id="nav-3">
-        <a class="link-nav" href="services.html">Services</a>
-      </li>
-      <li class="nav-link" id="nav-4">
-        <a class="link-nav" href="#portfolio">Portfolio</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="menu-bars hide" id="menu-bars">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div> 
-</nav>
-
-<!-- 
-        <nav class="nav">
-          <h1 id="logo">Sonoran Studios</h1>
-          <div class="main-nav">
-            <ul class="nav-links">
-              <li class="nav-link" id="nav-1">
-                <a class="link-nav" href="index.html">Home</a>
-              </li>
-              <li class="nav-link" id="nav-2">
-                <a class="link-nav" href="about.html">About</a>
-              </li>
-              <li class="nav-link" id="nav-3">
-                <a class="link-nav" href="services.html">Services</a>
-              </li>
-              <li class="nav-link" id="nav-4">
-                <a class="link-nav" href="#link">Portfolio</a>
-              </li>
-            </ul>
-            <a class="cta-btn" id="nav-5">Get Online</a>
-          </div>
-        </nav>
+        <div class="hero container">
+      
+            <div class="hero__textbox">
+              <p class="hero__textbox__pretext">Counseling, Beauty, and Health Professionals</p>
+              <h1 class="hero__textbox__heading">
+              Small Business Web Development
+              </h1>
+              <p class="hero__textbox__subtext">
+               We build engaging, high quality websites that will boost your brand awareness throughout Northern Virginia. Primarily serving the counseling, beauty, and health industries, we know that your customers want to look good and feel good. 
+              </p>
+            </div>
+     
+              <div class="hero__imgs">
+  
+                <div class="hero__imgbox">
+                  <div class="hero__img"></div>
+                </div>
           
-          <div class="menu-bars hide" id="menu-bars">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div> -->
-          
-
-
-      <div class="hero container">
-        <div class="hero-left">
-          <h2 class="hero-heading">
-          Web development <br />for small businesses
-          </h2>
-          <p class="hero-text">
-            We build high quality and affordable websites that customers will love,
-            generating you leads and improving your profits. Professionally designed and developed, our websites will be your sales rep.
-          </p>
-        </div>
-        <div class="hero-form form-div" >
-          <div class="form-left">
-            <img
-              class="form-headshot"
-              src="imgs/headshot-converted.webp"
-              alt="Headshot of Evan Nye"
-            />
-            <p class="form-name">Evan Nye</p>
-            <p class="form-text">Founder & Lead Dev.</p>
-            <p class="form-phone">(520) 591-6428</p>
           </div>
-          <div class="form-format">
-            <form class="form-input-row" action="#" data-netlify="true" name="hero-form">
-              <div>
-                <label for="name" class="form-label">Name</label>
-                <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="John Smith"
-                class="form-input"
-                required
-                />
-              </div>
-                <div>
-                <label for="email" class="form-label">Email</label>
-                <input
-                type="text"
-                id="email"
-                name="email-cta"
-                placeholder="evan.sonoranstudios@gmail.com"
-                class="form-input"
-                required
-                />
-                <div>
-              </div>
-
-                <label for="phone" class="form-label">Phone Number</label>
-                <input
-                type="tel"
-                id="phone"
-                name="phone-number"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                placeholder="123-456-7890"
-                class="form-input"
-                required
-                />
-              </div>
-              <button class="form-btn">Submit</button>
-            </form>
-           </div>
-         </div>
-
         </div>
-        
-        <div>
-         <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-         <defs>
-         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-         </defs>
-         <g class="parallax">
-         <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-         <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-         <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-         </g>
-         </svg>
-         </div>
+  
+        <div class="waves__div">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(247, 247, 255, 0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(247, 247, 255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(247, 247, 255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(247, 247, 255)" />
+          </g>
+          </svg>
+          </div>
+        </section>
 
-       
-<!-- 
-    <picture>
-          <source media="(max-width: 600px)" srcset="imgs/swish2.svg">
-          <source media="(max-width: 600px)" srcset="imgs/untitled-1.svg">
-          <img
-          src="imgs/untitled-1.svg"
-          alt="background image"
-          class="landing-swish"
-          aria-hidden="true"
-         
-          />
-        </picture>  -->
         
+
+
+
+      </nav>
+
+
       </section>
+
       <!-- ///////////////////////////////////////////////////////////////////////////////////
         ///////////                     WHAT WE DO                  /////////////////////////
         ////////////////////////////////////////////////////////////////////////////////////// -->
-   
-      <section class="section what-we-do container">
-        <h2 class="section-heading"><span>What</span> we do</h2>
-      <p class="section-text">
-        We build engaging, high converting websites that get your business online and generate you sales.
-        <a class="link-blue-subpage" href="services.html">OUR SERVICES</a>
-      </p>
-    </section>
+        <section class="section section__what-we-do ">
+          <div class="what-we-do container">
+  
+            <h2 class="section__heading what-we-do__heading"><span>What</span> We Do</h2>
+            <p class="section-text  what-we-do__text">
+              We build professional websites for small businesses throughout Northern Virginia. We primarily work with therapists and other health professionals, and develop websites that generate traffic and potential new clients.
+            </p>
+          </div>
+      </section>
+
     <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     FEATURES                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <section class="section features container">
-      <div class="features-row">
-        <div class="feature-1">
-          <i class="fa-solid fa-mobile-screen icon c"></i>
-          <h4 class="feature-title">Responsive</h4>
-          <p class="feature-txt">
-            It is 2023 and 80% of your audience uses a smartphone. We'll build a
-            website that looks great on mobile phones, tablets, desktops, and
-            everything in between.
-          </p>
+    <section class="section__feature">
+      
+      <div class="feature container">
+        <h2 class="feature__header" >- -  OUR SERVICES  - -</h2>
+        <div class="feature__row">
+          <div class="feature__cards">
+
+       
+          <div class="feature__card feature__card--1">
+            <div class="feature__card__imgbox">
+              <picture>
+                <img src="./imgs/home/desktop/icons8-web.svg" alt="" class="feature__icon">
+              </picture>
+            </div>
+            <div class="feature__card__textbox">
+              <h4 class="feature__title">Web Design</h4>
+              <p class="feature__text">
+                We build beautiful and professional websites. With 24/7 customer service, we keep your site running and working well.
+              </p>
+            </div>
+       
+          </div>     
+          <div class="feature__card feature__card--2">
+            <div class="feature__card__imgbox">
+              <img src="./imgs/home/desktop/icons8-seo.svg" alt="">
+            </div>
+            <div class="feature__card__textbox">  
+              <h4 class="feature__title">SEO Services</h4>
+              <p class="feature__text">
+               Let us work with you to build your online presence. We use SEO best practices to help your website climb google's rankings.
+              </p>
+            </div>
+
+          </div>
+          <div class="feature__card feature__card--3">
+            <div class="feature__card__imgbox">
+              <img src="./imgs/home/desktop/icons8-online-maintenance-portal.svg" alt="">
+            </div>
+            <div class="feature__card__textbox">  
+              <h4 class="feature__title">Web Maintenance</h4>
+              <p class="feature__text">
+               Let us work with you to build your online presence. We use SEO best practices to help your website climb google's rankings.
+              </p>
+            </div>
+
+          </div>
         </div>
-        <div class="feature-2">
-          <i class="fa-solid fa-bolt-lightning icon d"></i>
-          <h4 class="feature-title">Optimized</h4>
-          <p class="feature-txt">
-            Your website will be hand-coded, meaning no wasted code slowing your
-            website down. Your website will be lightning quick, improving Google
-            search results.
-          </p>
-        </div>
-        <div class="feature-3">
-          <i class="fa-solid fa-palette icon e"></i>
-          <h4 class="feature-title">Customized</h4>
-          <p class="feature-txt">
-            We'll work with you during the entire design process so you have the
-            website you've always wanted. We will make a website that shares
-            your brands story.
-          </p>
-        </div>
-      </div>
+
+       </div>
+    </div>
     </section>
     <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     Pricing                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="section pricing">
-      <div class="pricing-img-container">
-        <picture>
-          <img
-          src="imgs/website1-converted.webp"
-          class="pricing-img pricing-img-1"
-          alt="man at computer"
-          
-          />
-        </picture>
-        <picture>
-          <img
-          src="imgs/website2-converted.webp"
-          class="pricing-img pricing-img-2"
-          alt="man at computer"
-          
-          />
-        </picture>
-        <picture>
-          <img
-          src="imgs/website3-converted.webp"
-          class="pricing-img pricing-img-3"
-          alt="man at computer"
-          
-          />
-        </picture>
-      </div>
-      <div class="pricing-content">
-        <h2 class="section-heading">
-          <span>Effective websites </span>that make you money 
+    <section class="section section__pricing">
+      <div class="pricing container">
+        <div class="pricing__left">
+          <picture>
+            <img
+            src="imgs/home/desktop/website1-converted.webp"
+            class="pricing__img pricing__img--1"
+            alt="man at computer"
+            
+            />
+          </picture>
+          <picture>
+            <img
+            src="imgs/home/desktop/website2-converted.webp"
+            class="pricing__img pricing__img--2"            
+            alt="man at computer"
+            
+            />
+          </picture>
+          <picture>
+            <img
+            src="imgs/home/desktop/website3-converted.webp"
+            class="pricing__img pricing__img--3"
+            alt="man at computer"
+      
+            />
+          </picture>
+        </div>
+
+
+     
+      <div class="pricing__right">
+        <h2 class="section__heading pricing__heading">
+          <span>$0</span> Down, <span>$150</span> Per Month <br>
+          12 Month Minimum Contract
         </h2>
-        <p class="section-text">
-          Your website is the first impression your company makes on potential customers. Outdated, poorly designed, or broken websites lose you business and money. Our websites are professionally designed and customers will actually enjoy visiting.
-        <ul class="pricing-list">
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"> </i>
-              <h3 class="pricing-list-heading">24/7 Customer Service</h3>
+        <p class="section__text pricing__text">
+          $0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved.
+          <br>
+          <br>
+          You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.       
+          <ul class="pricing__list">
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">24/7 Customer Service</h3>
             </div>
-            <p>
+            <p class="pricing__list__text">
+              24 hours 7 days a week service to fix errors, answer questions, or
+              make changes whenever you need.
+            </p>
+          </li>
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">Mobile Friendly</h3>
+            </div>
+            <p class="pricing__list__text">
+             We'll build a website that looks great on mobile phones, tablets, AND desktops.
+            </p>
+          </li>
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">Customizeable</h3>
+            </div>
+            <p class="pricing__list__text">
+              We're not limited by page builders. We hand code our websites to be pixel perfect.
+            </p>
+          </li>
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">Optimized</h3>
+            </div>
+            <p class="pricing__list__text">
+              Stop losing customers to slow websites. We avoid useless and bloated code at all costs.
+            </p>
+          </li>
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">Maintenance</h3>
+            </div>
+            <p class="pricing__list__text">
+              A broken website reflects poorly on you. We offer routine maintenance to keep your website running.
+            </p>
+          </li>
+          <li >
+            <div class="pricing__list__row">
+              <i class="fa-solid fa-check pricing__icon"> </i>
+              <h3 class="pricing__list__heading">24/7 Customer Service</h3>
+            </div>
+            <p class="pricing__list__text">
               24 hours 7 days a week service to fix errors, answer questions, or
               make changes
             </p>
           </li>
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"> </i>
-              <h3 class="pricing-list-heading">Professionally Designed</h3>
-            </div>
-
-            <p>I work with professional designers trained in UI/UX. Your website will look sleek and convert visitors to customers.</p>
-          </li>
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"> </i>
-
-              <h3 class="pricing-list-heading">Google analytics</h3>
-            </div>
-            <p>
-              We will install google analytics so you can track website traffic
-              to make better business decisions.
-            </p>
-          </li>
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"></i>
-              <h3 class="pricing-list-heading">Affordable pricing</h3>
-            </div>
-            <p>We are a small studio with no overhead, allowing us to charge actually reasonable rates. </p>
-          </li>
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"></i>
-              <h3 class="pricing-list-heading">Modern Technologies</h3>
-            </div>
-            <p>We build websites using the web's latest technologies, improving speed and performance.</p>
-          </li>
-          <li>
-            <div class="list-top-row">
-              <i class="fa-solid fa-check icon"></i>
-              <h3 class="pricing-list-heading">Maintanence included</h3>
-            </div>
-            <p>We will train you how to maintain your website, and will always fix broken code to keep you online.</p>
-          </li>
+          
         </ul>
       </div>
+    </div>
     </section>
     <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     PORTFOLIO                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
   
-    <section class="section portfolio container" id="portfolio">
-      <h2 class="section-heading port"><span>Our</span> Portfolio</h2>
-      <div class="portfolio-cards" id="gallery">
-        <div class="portfolio-card portfolio-card-1">
-          <img src="/imgs/asset-2converted.webp" class="background_saguaro"
-          alt="background image"
-          />
-          <img
-          src="imgs/designo-converted.webp"
-            alt="Designo Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-    
-          />
-          <h3 class="project-title">Designo</h3>
-          <p class="portfolio-text">
-            A responsive website for a digital agency specializing in graphic design
-          </p>
-          <a href ="https://designo-sonoran-studios.netlify.app/">
+    <section class="section__portfolio section">
+      <div class="container portfolio">
+        <h2 class="section__heading portfolio__heading">Our <span>Portfolio</span></h2>
+        <div class="portfolio__container">
+        <div class="portfolio__card portfolio__card--1 ">
+          <img src="/imgs/home/desktop/designo-screenshot.webp" alt="designo webpage" class="portfolio__card__img portfolio__card__img--1 blur">
+          <div class="portfolio__card__content fade">
+            <p class="portfolio__card__header">Designo</p>
+            <p class="portfolio__card__desc">Sample website for a digitial design agency</p>
 
-            <button class="portfolio-btn">Visit Site</button>
-          </a>
+            <a href="https://designo-sonoran-studios.netlify.app/" class="portfolio__card__link">See Project &#x2192;</a>
+          </div>
         </div>
-        <div class="portfolio-card portfolio-card-4">
-          <img
-            src="imgs/my-restaurant-converted.webp"
-            alt="My Restaurant Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-          />
-          <h3 class="project-title">Dine</h3>
-          <p class="portfolio-text">
-            A responsive website for a fictional restaurant, complete with a contact form.
-          </p>
-          <a href ="https://myrestaurant-sonoran-studios.netlify.app/"">
-            <button class="portfolio-btn">Visit Site</button>
-          </a>
-        </div>
-        <div class="portfolio-card portfolio-card-1">
-    
-          <img
-          src="imgs/Omnifood-converted.webp"
-            alt="Omnifood Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-    
-          />
-          <h3 class="project-title">Omnifood</h3>
-          <p class="portfolio-text">
-            A responsive website for a meal plan company with clean design that
-            generates sales for the business.
-          </p>
-          <a href ="https://omnifood-sonoran-studios.netlify.app/">
+        
+        <div class="portfolio__card portfolio__card--2 ">
+          <img src="/imgs/home/desktop/dine-screenshot.webp" alt="my restuarant webpage" class="portfolio__card__img portfolio__card__img--1 blur">
+          <div class="portfolio__card__content fade">
+            <p class="portfolio__card__header">Dine</p>
+            <p class="portfolio__card__desc">Sample website for a restaurant</p>
 
-            <button class="portfolio-btn">Visit Site</button>
-          </a>
+            <a href="https://myrestaurant-sonoran-studios.netlify.app/" class="portfolio__card__link">See Project &#x2192;</a>
+          </div>
         </div>
-  
-        <div class="portfolio-card portfolio-card-2">
-          <img
-          src="imgs/forkify-converted.webp"
-            alt="Forkify Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-          /> 
-         <h3 class="project-title">Forkify</h3>
-          <p class="portfolio-text">
-            A non-responsive website application allowing you to search and save recipes.
-          </p>
-          <a href ="https://forkify-sonoran-studios.netlify.app/">
-            <button class="portfolio-btn">Visit Site</button>
-          </a>
+        <div class="portfolio__card portfolio__card--3 ">
+          <img src="/imgs/home/desktop/myteam-screenshot.webp" alt="my team webpage" class="portfolio__card__img portfolio__card__img--1 blur">
+          <div class="portfolio__card__content fade">
+            <p class="portfolio__card__header">My Team</p>
+            <p class="portfolio__card__desc">Sample website for recruiting agency</p>
+
+            <a href="https://myteam-sonoran-studios.netlify.app/" class="portfolio__card__link">See Project &#x2192;</a>
+          </div>
         </div>
-        <div class="portfolio-card portfolio-card-3">
-          <img
-            src="imgs/natours-converted.webp"
-            alt="Natours Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-          /> 
-         <h3 class="project-title">Natours</h3>
-          <p class="portfolio-text">
-            A responsive website for a nature tour company, with animations and a mobile menu.
-          </p>
-          <a href ="https://natours-sonoran-studios.netlify.app/">
-            <button class="portfolio-btn">Visit Site</button>
-          </a> 
-        </div>
+ 
+        
+      </div>
+        
+        
+       
+      </div>
       
-        <div class="portfolio-card portfolio-card-5">
-         <img
-            src="imgs/my-team-converted.webp"
-            alt="My Team Website"
-            class="portfolio-img"
-            width="300px"
-            height="152px"
-          /> 
-          <h3 class="project-title">My Team Website</h3>
-          <p class="portfolio-text">
-            A responsive website for a staffing agency, with animations and a contact form.
-          </p>
-          <a href ="https://myteam-sonoran-studios.netlify.app/">
-            <button class="portfolio-btn">Visit Site</button>
-          </a> 
+    </section>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     About                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <section class="section section__about">
+      <div class="about container">
+        <div class="about__content">
+          <h2 class="section__heading about__header"><span>About</span> Me</h2>
+          <p class="about__text">My name is Evan, and I am a student and a web developer. After moving to the DMV, I spent two years teaching myself how to code and build beautiful websites. Now I am starting this business to make an income during grad school. I love making websites that help small businesses thrive.  </p>
+          <a href="#" class="about__button">Learn more &#x2192;</a>
         </div>
+
+
+
+          <picture class="about__picture">
+            <source media="(min-width: 650px)" srcset="imgs/home/desktop/me.webp">
+            <source media="(min-width: 465px)" srcset="imgs/home/desktop/me.webp">
+            <img src="imgs/home/desktop/me.webp" class="about__img">
+          </picture>
+
+      </div>
+
+
       </div>
     </section>
 
+  
     <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     Testimonials                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="section testimonials">
-      <h2 class="section-heading testimonial-heading">
-        <span>Testimonials</span> (WHAT THEY WOULD SAY...)
-      </h2>
-      <div class="testimonial-content">
-        <div class="slide slide--1">
-          <div class="testimonial">
-            <h4 class="testimonial_header">Best Web Designer Ever</h4>
-            <blockquote class="testimonial-text">
-              I could not be happier with the website that Sonoran Studios built
-              for me. They were speedy in the delivery of the website, and
-              worked with me to really understand my brand identity and
-              incorporate it throughout my website. With their help, my sales
-              increased 72% in just 6 months.
-            </blockquote>
-            <address class="testimonial-author">
-              <img src="imgs/user-1converted.webp" class="testimonial_photo" alt='headshot' width='65px' height='65px'/>
-              <h5 class="testimonial-name">Sam Brown</h5>
-              <p class="testimonial-location">Arlington, VA</p>
-            </address>
+      <section class="section__testimonial section">
+        <div class="testimonial container">
+          <h2 class="section__heading testimonial__heading"><span>Testimonials</span> (What they would say...)</h2>
+  
+
+        <div class="testimonial__content">
+          <div class="testimonial__slide testimonial__slide--1">
+            <div class="testimonial__slide__claim">
+              <h3 class="testimonial__slide__header">Helpful & Quick</h3>
+              <blockquote class="testimonial__slide__text"> 
+                Evan was super helpful, incredibly knowledgeable, and quick to solve my problem. He accurately diagnosed the problem with my website’s newsletter page and quickly solved it with an elegant solution.
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="imgs/home/user-1converted.webp" class="testimonial__author__photo" alt='headshot' width='65px' height='65px'/>
+                <h4 class="testimonial__author__name">Coby Jones</h4>
+                <div class="testimonial__author__location">Storyteller & Author</div>
+              </address>
+            </div>
           </div>
-        </div>
-        <div class="slide slide--2">
-          <div class="testimonial">
-            <h4 class="testimonial_header">Beatiful Website for Cheap</h4>
-            <blockquote class="testimonial-text">
-              As a small business owner, its incredibly important that money
-              spent is worth it. Without a doubt, the Sonoran Studio website
-              plan is 100% worth the investment. I have a beautiful, mobile
-              friendly, AND affordable website!
-            </blockquote>
-            <address class="testimonial-author">
-              <img src="imgs/user-2converted.webp" class="testimonial_photo" alt='headshot' width='65px' height='65px'/>
-              <h5 class="testimonial-name">John Smith</h5>
-              <p class="testimonial-location">Washington, DC</p>
-            </address>
+          <div class="testimonial__slide testimonial__slide--2">
+            <div class="testimonial__slide__claim">
+              <h3 class="testimonial__slide__header">Beatiful Website for Cheap</h3>
+              <blockquote class="testimonial__slide__text"> 
+                As a small business owner, its incredibly important that money spent is worth it. Without a doubt, the Sonoran Studio website plan is 100% worth the investment. I have a beautiful, mobile friendly, AND affordable website!
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="imgs/home/user-2converted.webp" class="testimonial__author__photo" alt='headshot' width='65px' height='65px'/>
+                <h4 class="testimonial__author__name">John Smith</h4>
+                <div class="testimonial__author__location">Washington, DC</div>
+              </address>
+            </div>
           </div>
-        </div>
-        <div class="slide slide--3">
-          <div class="testimonial">
-            <h4 class="testimonial_header">Cannot recommend enough!</h4>
-            <blockquote class="testimonial-text">
-              Sonoran Studios just gets it! You can tell they put in the time to
-              make sure your website is pixel-perfect, runs smoothly, and looks
-              great on any device. Incredibly pleasant to work with too!
-            </blockquote>
-            <address class="testimonial-author">
-              <img src="imgs/user-3converted.webp" class="testimonial_photo" alt='headshot' width='65px' height='65px'/>
-              <h5 class="testimonial-name">Cyrus Cole</h5>
-              <p class="testimonial-location">Tucson, AZ</p>
-            </address>
+          <div class="testimonial__slide testimonial__slide--3">
+            <div class="testimonial__slide__claim">
+              <h3 class="testimonial__slide__header">Cannot recommend enough!</h3>
+              <blockquote class="testimonial__slide__text"> 
+                Sonoran Studios just gets it! You can tell they put in the time to make sure your website is pixel-perfect, runs smoothly, and looks great on any device. Incredibly pleasant to work with too!
+              </blockquote>
+              <address class="testimonial__author">
+                <img src="imgs/home/user-3converted.webp" class="testimonial__author__photo" alt='headshot' width='65px' height='65px'/>
+                <h4 class="testimonial__author__name">Cyrus Cole</h4>
+                <div class="testimonial__author__location">Tucson, AZ</div>
+              </address>
+            </div>
           </div>
+          <button class="slider__btn slider__btn--left" aria-label="Left">&larr;</button>
+          <button class="slider__btn slider__btn--right" aria-label="Right">&rarr;</button>
+          <div class="dots"></div>
         </div>
-        <button class="slider__btn slider__btn--left" aria-label="Left">&larr;</button>
-        <button class="slider__btn slider__btn--right" aria-label="Right">&rarr;</button>
-        <div class="dots"></div>
       </div>
-    </section>
+      </section>
+
+        <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Cards                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="section section__cards">
+  <h2 class="section__heading">Our <span>Packages</span></h2>
+  <div class="cards container">
+    <div class="card card--1">
+      <div class="card__header"><h3>Basic</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>150</span>/mo</p>
+        <p class="card__subprice">Our basic package</p>
+        <p class="card__text">A mobile responsive, 5 page website. Perfect for small businesses.</p>
+      </div>
+
+      <button class="card__button">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">2 Blog posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="card card--2">
+      <div class="card__header card__header--2"><h3>Blog</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>300</span>/mo</p>
+        <p class="card__subprice">Grow your online presence</p>
+        <p class="card__text">A mobile responsive, 5 page website with a working blog for SEO purposes.</p>
+      </div>
+
+      <button class="card__button card__button--fill">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check  card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">2 Blog Posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+    </div>
+    <div class="card card--3">
+      <div class="card__header card__header--3"><h3>Professional</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>2000</span>+</p>
+        <p class="card__subprice">for established businesses</p>
+        <p class="card__text">A professionally designed website. Pricing depends on scope of work.</p>
+      </div>
+
+      <button class="card__button">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">2 Blog posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check  card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+    
+    
     <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     CTA                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="section section-cta">
-      <div class="container flex-center">
 
-        <div class="cta">
-          <div class="cta-text-box">
-            <h2 class="section-heading cta-heading">Do you need a website?</h2>
-            <p class="cta-text">
-              Get a fast, well-designed, and affordable website today. Generate
-              sales and boost your profits. I will work with you throughout the
-              entire process.
-            </p>
-            
-            <form class="cta-form" action="#" data-netlify="true" name="cta-form">
-              <div>
-                <label for="full-name">Full Name</label>
-                <input
-                id="full-name"
-                type="text"
-                placeholder="Your name"
-                name="fullname"
-                required
-                />
-              </div>
-              <div>
-                <label for="email-cta">Email address</label>
-                <input
-                id="email-cta"
-                type="email"
-                placeholder="me@example.com"
-                name="email"
-                required
-                />
-              </div>
-              
-              <div>
-                <label for="select-where">Where did you hear about us?</label>
-                <select id="select-where" name='hear'required>
-                  <option value="">Please choose one option</option>
-                  <option value="Friends">Friends and family</option>
-                  <option value="Direct">Direct Outreach</option>
-                  <option value="Facebook ad">Facebook ad</option>
-                  <option value="Other">Other</option>
-                </select>
-              </div>
-              
-              <button class="btn cta-btn">Get in touch</button>
-            </form>
-          </div>
-          <div
-          class="cta-img-box"
-          role="img"
-          alt="Woman enjoying food"
-          ></div>
+    <div class="section section__cta">
+      <div class="container cta">
+        <div class="cta__textbox">
+          <h2 class="cta__header section__heading">Do you need a website?</h2>
+          <p class="cta__text">Get a fast, well-designed, and affordable website today. Generate sales and boost your profits. I will work with you throughout the entire process.</p>
+          <form action="#" data-netlify="true" name="cta__form" class="cta__form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Your name" name="fullname" id="name" required>
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              name="email"
+              required
+              />
+            </div>
+            <div>
+              <label for="select-where">Where did you hear about us?</label>
+              <select id="select-where" name='hear'required>
+                <option value="">Please choose one option</option>
+                <option value="Friends">Friends and family</option>
+                <option value="Direct">Direct Outreach</option>
+                <option value="Facebook ad">Facebook ad</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button class="btn cta__btn">Get in touch</button>
+          </form>
         </div>
+        <div
+          class="cta__imgbox"
+          role="img"
+          alt="typing at computer"
+          ></div>
       </div>
     </div>
-
-    </section>
   </main>
-  <footer class="section footer">
-
-    <div class="container grid grid--footer foot-text">
-      <div class="logo-col">
-        <a href="#" class="footer-logo">
-          <h1 class="foot-logo">Sonoran Studios</h1>
+  <footer class="section section__footer">
+    <div class="container footer">
+      <div class="footer__col--1">
+        <a href="#" class="footer__logo">
+          <p class="footer__logo--text">Sonoran Studios</p>
         </a>
 
-        <ul class="social-links">
-          <li>
-            <a class="footer-link" href="#" aria-label="Instagram"
-              ><i class="fa-brands fa-instagram"></i></a>
+        <ul class="footer__social-links">
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i></a>
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Twitter"
-              ><i class="fa-brands fa-twitter"></i></a>
+          <li class="social__icon"> 
+            <a href="#" class="footer__link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </li>
         </ul>
 
-        <p class="copyright">
-          Copyright &copy; 2027 by Sonoran Studios. All rights reserved.
-        </p>
+        <p class="footer__copyright"> Copyright &copy; 2027 by Sonoran Studios. All rights reserved.</p>
       </div>
-
-      <div class="address-col">
-        <p class="footer-heading">Contact us</p>
-        <address class="contacts">
-          <p class="address">
-            1029 N. George Mason Dr.
-          </p>
+      <div class="footer__col--2">
+        <p class="footer__heading">Contact Us</p>
+        <address class="footer__contacts">
+          <p class="footer__address">Arlington, VA 22205</p>
           <p>
-            <a class="footer-link" href="tel:415-201-6370">(520) 591-6428</a
-            ><br />
-            <a class="footer-link" href="mailto:evan.sonoranstudios@gmail.com"
-              >evan.sonoranstudios@gmail.com</a
-            >
+            <a  class="footer__link footer__phone">(520) 591-6428</a>
           </p>
+          <a class="footer__link" href="mailto:evan.sonoranstudios@gmail.com"
+          >evan.sonoranstudios@gmail.com</a
+        >
         </address>
       </div>
-
-      <nav class="nav-col">
-        <p class="footer-heading">Navigation</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="#" aria-label="home">Home</a></li>
-          <li><a class="footer-link" href="about.html" aria-label="about">About</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="services">Services</a></li>
-          <li><a class="footer-link" href="#link" aria-label="portfolio">Portfolio</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="#" aria-label="home">Home</a></li>
+          <li><a class="footer__link" href="about.html" aria-label="about">About</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="services">Services</a></li>
+          <li><a class="footer__link" href="#link" aria-label="portfolio">Portfolio</a></li>
 
         </ul>
       </nav>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Services</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="services.html" aria-label="Services">Web Design</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Website Maintenance</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Content Creation</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">SEO Services</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Services</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="services.html" aria-label="Services">Web Design</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Website Maintenance</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Content Creation</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">SEO Services</a></li>
         </ul>
+      </nav>
+
       </nav>
     </div>
   </footer>
-    <script defer src="script.js"></script>
+  <script defer src="script.js"></script>
   </body>
   </html>

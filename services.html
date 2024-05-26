@@ -4,130 +4,276 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer
-      src="https://kit.fontawesome.com/0ae45b2d7e.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name=description content="Sonoran Studios Web Design. Evan Nye. 2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link
     rel="preload"
     href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
-<noscript>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
-        rel="stylesheet"
-        type="text/css"
-    />
-</noscript>
-    <link rel="stylesheet" href="services.css" />
-    <link rel="stylesheet" href="/queries/mobile-services.css"/>
-
-    <title>Services - Sonoran Studios</title>
+    <script defer
+      src="https://kit.fontawesome.com/0ae45b2d7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+<!-- 
+    <link rel="stylesheet" href="queries/mobile-home.css"/> -->
+    <title>Services - Sonoran Studios Web Development</title>
   </head>
   <body>
-    <section class="landing">
-      <div class="overlay overlay-slide-left hide" id="overlay">
-        <nav class="mobile-nav">
-          <h1 class="mobile-logo">Sonoran Studios</h1>
-         
-            <ul class="mobile-nav-links">
-              <li class="nav-link mobile-nav-link" id="nav-1">
-                <a class=" mobile-link-nav" href="index.html">Home</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-2">
-                <a class=" mobile-link-nav" href="about.html">About</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-3">
-                <a class=" mobile-link-nav " href="services.html">Services</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-4">
-                <a class="mobile-link-nav" href="#link">Portfolio</a>
-              </li>
-             <li class="nav-link mobile-nav-link" id="nav-5"> <a class="cta-btn" id="nav-5">Get Online</a></li>
-      
-            </ul>
-          
-        </nav>
-        <!-- Menu Items -->
-        
-      </div>
-      
-      <!-- Header Nav -->
-      <nav class="nav">
-        <a class="logo-link" href='index.html'><h1 id="logo">Sonoran Studios</h1></a>
-        <div class="main-nav">
-          <ul class="nav-links">
-            <li class="nav-link" id="nav-1">
-              <a class="link-nav" href="index.html">Home</a>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     LANDING                  /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+     <section class="section services__landing services">
+      <nav class="container nav">
+        <a href="index.html" class="nav__logo">Sonoran Studios</a>
+          <ul class="nav__links " id="navList">
+            <li class="nav__link" id="nav-1">
+              <a class="nav__link-nav" href="index.html">Home</a>
             </li>
-            <li class="nav-link" id="nav-2">
-              <a class="link-nav" href="about.html">About</a>
+            <li class="nav__link" id="nav-2">
+              <a class="nav__link-nav" href="about.html">About</a>
             </li>
-            <li class="nav-link" id="nav-3">
-              <a class="link-nav" href="services.html">Services</a>
+            <li class="nav__link nav__link--active" id="nav-3">
+              <a class="nav__link-nav" href="services.html">Services</a>
             </li>
-            <li class="nav-link" id="nav-4">
-              <a class="link-nav" href="#portfolio">Portfolio</a>
+            <li class="nav__link" id="nav-4">
+              <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__link" id="nav-4">
+              <a class="nav__link-nav" href="contact.html">Contact Us</a>
             </li>
           </ul>
-        </div>
-      
-        <div class="menu-bars hide" id="menu-bars">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div> 
+
+          <div class="nav__mobile hide" id="menuBars">
+            <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
+          </div>
+    
+          <div class="mobile hide" id="overlay">
+            <ul class="mobile__links " id="navList">
+              <li class="mobile__link">
+                <h2 class="mobile__link--title" >Sonoran Studios</a>
+              </li>
+              <li class="mobile__link mobile__link--active" id="nav-1">
+                <a class="mobile__link--nav" href="index.html">Home</a>
+              </li>
+              <li class="mobile__link" id="nav-2">
+                <a class="mobile__link--nav" href="about.html">About</a>
+              </li>
+              <li class="mobile__link" id="nav-3">
+                <a class="mobile__link--nav" href="services.html">Services</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          
       </nav>
 
-
-      <h2>Our Services</h2>
-    </section>
-
-      <!-- ///////////////////////////////////////////////////////////////////////////////////
-    ///////////                     Services                    /////////////////////////
+          <h1 class="services__hero">Our Services</h1>
+  </section>
+   
+    
+        <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     SERVICES                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <section class="services container">
-      <div class="section service">
-        <div class="service-right">
-          <img src="/imgs/services-1.svg" alt="Web Design " class="service-img" height="350px" width="546px">
+    <h2 class="section__heading service__heading">What We Offer</h2>
+    <section class="section services__service container">
+      <div class="service">
+
+        <div class="service__imgbox">
+          <picture>
+            <img src="/imgs/services/services-1.svg" alt="Design Appealling Web Pages" class="service__img">
+          </picture>
         </div>
-        <div class="service-box">
-          <h3 class="service-heading">We design <span>appealling web pages</span></h3>
-          <p class="service-text">We work with professional designers to build your business a website that looks clean and is proven to generate sales. Before we even begin the design process, we will sit down with you to understand your brand identity. </p>
-          <p class="service-text">We'll use that conversation as a springboard for our design. We will create wireframes and mock ups for you to review before it moves to production. You'll have the executive decision on all design choices. </p>
-        </div>
-        </div>
-      <div class="section service build">
-        <div class="service-box">
-          <h3 class="service-heading">We build <span>fast, efficient</span> websites</h3>
-          <p class="service-text">Following the design process, the fun begins. We will build you a website using the latest technologies that are suitable for any browser and screen size. They will be lightening quick and easy to use so customers don't get lost.</p>
-          <p class="service-text">Do you already have your own design? No worries! We can build a website using outside mockups. You won't be able to notice a difference between the mockup and final product.</p>
-        </div>
-        <div class="service-right">
-          <img src="/imgs/build.svg" alt="Fast Websites" class="service-img" height="350px" width="464px">
+        <div class="service__textbox">
+          <h2 class="service__header">We Design <span>Appealling Web Pages</span></h2>
+          <p class="service__text">We work with professional designers to build your business a website that looks clean and is proven to generate sales. Before we even begin the design process, we will sit down with you to understand your brand identity.</p>
+          <p class="service__text">We'll use that conversation as a springboard for our design. We will create wireframes and mock ups for you to review before it moves to production. You'll have the executive decision on all design choices.</p>
         </div>
       </div>
-      <div class="section service">
-        <div class="service-right">
-          <img src="/imgs/search.svg" alt="SEO Services" class="service-img" height="350px" width="567px">
+      <div class="service service--reverse">
+
+        <div class="service__imgbox">
+          <picture>
+            <img src="/imgs/services/build.svg" alt="Design Appealling Web Pages" class="service__img">
+          </picture>
         </div>
-        <div class="service-box">
-          <h3 class="service-heading"><span>SEO services</span> to get you noticed</h3>
-          <p class="service-text">Even if your service is 1 in 1 million, it won't matter if no one can find your business. It will take time, but we will utilize our search engine opitimization expertise to have your website climbing google's search results.</p>
-          <p class="service-text">From keywords to backlinks to blogs, there are many ways to get your website noticed. We will train you in SEO best practices so that you can maintain your websites profile.</p>
+        <div class="service__textbox">
+          <h2 class="service__header">We Build <span>Fast, Efficient</span> Websites</h2>
+          <p class="service__text">Following the design process, the fun begins. We will build you a website using the latest technologies that are suitable for any browser and screen size. They will be lightening quick and easy to use so customers don't get lost.</p>
+          <p class="service__text">Do you already have your own design? No worries! We can build a website using outside mockups. You won't be able to notice a difference between the mockup and final product.</p>
         </div>
+      </div>
+      <div class="service">
+
+        <div class="service__imgbox">
+          <picture>
+            <img src="/imgs/services/search.svg" alt="Design Appealling Web Pages" class="service__img">
+          </picture>
         </div>
-   
+        <div class="service__textbox">
+          <h2 class="service__header"><span>SEO Services</span> to get you noticed</h2>
+          <p class="service__text">Even if your service is 1 in 1 million, it won't matter if no one can find your business. It will take time, but we will utilize our search engine opitimization expertise to have your website climbing google's search results.</p>
+          <p class="service__text">From keywords to backlinks to blogs, there are many ways to get your website noticed. We will train you in SEO best practices so that you can maintain your websites profile.</p>
+        </div>
+      </div>
     </section>
-  
-  <!-- ///////////////////////////////////////////////////////////////////////////////////
+
+
+
+        <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Cards                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="section section__cards">
+  <h2 class="section__heading">Our <span>Packages</span></h2>
+  <div class="cards container">
+    <div class="card card--1">
+      <div class="card__header"><h3>Basic</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>150</span>/mo</p>
+        <p class="card__subprice">Our basic package</p>
+        <p class="card__text">A mobile responsive, 5 page website. Perfect for small businesses.</p>
+      </div>
+
+      <button class="card__button">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">2 Blog posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="card card--2">
+      <div class="card__header card__header--2"><h3>Blog</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>300</span>/mo</p>
+        <p class="card__subprice">Grow your online presence</p>
+        <p class="card__text">A mobile responsive, 5 page website with a working blog for SEO purposes.</p>
+      </div>
+
+      <button class="card__button card__button--fill">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check  card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">2 Blog Posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-x  card__list__icon card__list__icon--X"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+    </div>
+    <div class="card card--3">
+      <div class="card__header card__header--3"><h3>Professional</h3></div>
+      <div class="card__pricing">
+        <p class="card__price"><span>2000</span>+</p>
+        <p class="card__subprice">for established businesses</p>
+        <p class="card__text">A professionally designed website. Pricing depends on scope of work.</p>
+      </div>
+
+      <button class="card__button">Get Started</button>
+
+      <ul class="card__list">
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">5 Page Website</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">2 Blog posts per month</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-check  card__list__icon card__list__icon--check"></i>
+          <p class="card__list__text">Professionally Designed</p>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</div>
+
+
+    
+    
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     CTA                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="section section__cta">
+      <div class="container cta">
+        <div class="cta__textbox">
+          <h2 class="cta__header section__heading">Do you need a website?</h2>
+          <p class="cta__text">Get a fast, well-designed, and affordable website today. Generate sales and boost your profits. I will work with you throughout the entire process.</p>
+          <form action="#" data-netlify="true" name="cta__form" class="cta__form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Your name" name="fullname" id="name" required>
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              name="email"
+              required
+              />
+            </div>
+            <div>
+              <label for="select-where">Where did you hear about us?</label>
+              <select id="select-where" name='hear'required>
+                <option value="">Please choose one option</option>
+                <option value="Friends">Friends and family</option>
+                <option value="Direct">Direct Outreach</option>
+                <option value="Facebook ad">Facebook ad</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button class="btn cta__btn">Get in touch</button>
+          </form>
+        </div>
+        <div
+          class="cta__imgbox"
+          role="img"
+          alt="Woman enjoying food"
+          ></div>
+      </div>
+    </div>
+<!-- 
     <section class="section section-cta">
-      <div class="container">
+      <div class="container flex-center">
 
         <div class="cta">
           <div class="cta-text-box">
@@ -138,7 +284,7 @@
               entire process.
             </p>
             
-            <form class="cta-form" action="#" data-netlify="true" name="cta-form-services">
+            <form class="cta-form" action="#" data-netlify="true" name="cta-form">
               <div>
                 <label for="full-name">Full Name</label>
                 <input
@@ -150,19 +296,19 @@
                 />
               </div>
               <div>
-                <label for="email">Email address</label>
+                <label for="email-cta">Email address</label>
                 <input
-                id="email"
+                id="email-cta"
                 type="email"
                 placeholder="me@example.com"
                 name="email"
                 required
                 />
-              </div>
+              </div>          
               
               <div>
                 <label for="select-where">Where did you hear about us?</label>
-                <select id="select-where" name="hear" required>
+                <select id="select-where" name='hear'required>
                   <option value="">Please choose one option</option>
                   <option value="Friends">Friends and family</option>
                   <option value="Direct">Direct Outreach</option>
@@ -177,80 +323,77 @@
           <div
           class="cta-img-box"
           role="img"
-          aria-label="Woman enjoying food"
+          alt="Woman enjoying food"
           ></div>
         </div>
       </div>
     </div>
 
-    </section>
+    </section> -->
   </main>
-  <footer class="section footer">
-
-    <div class="container grid grid--footer">
-      <div class="logo-col">
-        <a href="#" class="footer-logo">
-          <h1 class="foot-logo">Sonoran Studios</h1>
+  <footer class="section section__footer">
+    <div class="container footer">
+      <div class="footer__col--1">
+        <a href="#" class="footer__logo">
+          <p class="footer__logo--text">Sonoran Studios</p>
         </a>
 
-        <ul class="social-links">
-          <li>
-            <a class="footer-link" href="#" aria-label="Instagram"
-              ><i class="fa-brands fa-instagram"></i></a>
+        <ul class="footer__social-links">
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i></a>
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Twitter"
-              ><i class="fa-brands fa-twitter"></i></a>
+          <li class="social__icon"> 
+            <a href="#" class="footer__link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </li>
         </ul>
 
-        <p class="copyright">
-          Copyright &copy; 2027 by Sonoran Studios. All rights reserved.
-        </p>
+        <p class="footer__copyright"> Copyright &copy; 2027 by Sonoran Studios. All rights reserved.</p>
       </div>
-
-      <div class="address-col">
-        <p class="footer-heading">Contact us</p>
-        <address class="contacts">
-          <p class="address">
-            1029 N. George Mason Dr.
-          </p>
+      <div class="footer__col--2">
+        <p class="footer__heading">Contact Us</p>
+        <address class="footer__contacts">
+          <p class="footer__address">Arlington, VA 22205</p>
           <p>
-            <a class="footer-link" href="tel:415-201-6370">(520) 591-6428</a
-            ><br />
-            <a class="footer-link" href="mailto:evan.sonoranstudios@gmail.com"
-              >evan.sonoranstudios@gmail.com</a
-            >
+            <a  class="footer__link footer__phone">(520) 591-6428</a>
           </p>
+          <a class="footer__link" href="mailto:evan.sonoranstudios@gmail.com"
+          >evan.sonoranstudios@gmail.com</a
+        >
         </address>
       </div>
-
-      <nav class="nav-col">
-        <p class="footer-heading">Navigation</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="#" aria-label="home">Home</a></li>
-          <li><a class="footer-link" href="about.html" aria-label="about">About</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="services">Services</a></li>
-          <li><a class="footer-link" href="#link" aria-label="portfolio">Portfolio</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="#" aria-label="home">Home</a></li>
+          <li><a class="footer__link" href="about.html" aria-label="about">About</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="services">Services</a></li>
+          <li><a class="footer__link" href="#link" aria-label="portfolio">Portfolio</a></li>
 
         </ul>
       </nav>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Services</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="services.html" aria-label="Services">Web Design</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Website Maintenance</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Content Creation</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">SEO Services</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Services</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="services.html" aria-label="Services">Web Design</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Website Maintenance</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Content Creation</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">SEO Services</a></li>
         </ul>
+      </nav>
+
       </nav>
     </div>
   </footer>
-    <script defer src="about.js"></script>
+  <script defer src="script.js"></script>
   </body>
   </html>

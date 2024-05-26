@@ -1,0 +1,843 @@
+@use "../abstracts/" as a;
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+// UTILITIES
+.section__heading {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  text-align: center;
+
+  span {
+    color: a.$primary--blue;
+  }
+
+  @include a.respond(tab-port) {
+    font-size: a.$h4-font-size;
+  }
+  @include a.respond(phone-small) {
+    font-size: a.$h3-font-size-small;
+  }
+}
+
+.nav {
+  color: a.$white;
+
+  // The Logo
+  &__logo {
+    color: inherit;
+    font-size: a.$h4-font-size;
+    color: a.$white;
+
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    @include a.respond(phone-small) {
+      font-size: a.$h3-font-size-small;
+    }
+  }
+
+  // The Hyperlinks
+  &__link-nav {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: a.$p-font-size-medium;
+
+    transition: all 0.3s;
+
+    &:hover {
+      color: a.$secondary--orange;
+    }
+  }
+}
+
+.mobile {
+  &__link {
+    &--title {
+      color: a.$white;
+      font-family: serif;
+      font-size: a.$h3-font-size-large;
+      font-weight: 400;
+    }
+    &--nav {
+      color: a.$white;
+      font-size: a.$h4-font-size;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
+
+.hero {
+  &__textbox {
+    color: a.$white;
+
+    @include a.respond(tab-port) {
+      text-align: center;
+    }
+    &__pretext {
+      color: a.$secondary--orange;
+      font-size: a.$p-font-size;
+
+      @include a.respond(tab-port) {
+        font-size: a.$h3-font-size-small;
+      }
+
+      @include a.respond(phone) {
+        font-size: a.$p-font-size;
+      }
+
+      // @include a.respond(phone){
+      //   font-size: a.$h3-;
+      // }
+    }
+
+    &__heading {
+      color: inherit;
+      font-size: a.$h2-font-size;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      @include a.respond(tab-land) {
+        font-size: a.$h4-font-size;
+      }
+
+      @include a.respond(tab-port) {
+        font-size: a.$h3-font-size-large;
+      }
+
+      @include a.respond(phone) {
+        font-size: a.$h4-font-size;
+      }
+    }
+
+    &__subtext {
+      color: inherit;
+      font-size: a.$p-font-size;
+
+      @include a.respond(tab-port) {
+        font-size: a.$h3-font-size-small;
+      }
+
+      @include a.respond(phone) {
+        font-size: a.$p-font-size;
+      }
+    }
+  }
+}
+
+// WHAT WE DO
+.what-we-do {
+  &__heading {
+    color: a.$secondary--black;
+  }
+
+  &__text {
+    text-align: center;
+    line-height: 1.6;
+    width: 660px;
+    font-size: a.$p-font-size-large;
+    margin-top: 20px;
+    color: a.$secondary--black;
+
+    @include a.respond(phone-small) {
+      font-size: a.$p-font-size;
+    }
+  }
+}
+
+// BOXES
+
+.box {
+  color: #fff;
+
+  &__heading {
+    font-size: 4rem;
+    line-height: 48px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @include a.respond(phone) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    span {
+      color: a.$secondary--rust;
+      font-size: 2rem;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+// FEATURE
+.feature {
+  &__card {
+    &__button {
+      color: a.$white;
+      font-size: a.$p-font-size;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  &__header {
+    color: a.$secondary--orange;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: a.$h4-font-size;
+  }
+  &__icon {
+    font-size: a.$h2-font-size;
+    color: a.$secondary--black;
+  }
+  &__title {
+    font-size: a.$h4-font-size;
+    font-weight: 700;
+    color: a.$primary--blue;
+  }
+
+  &__text {
+    font-size: a.$p-font-size-medium;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  &__grid {
+    &--number {
+      font-size: a.$h3-font-size-small;
+      color: a.$secondary--blue;
+      font-weight: 500;
+    }
+
+    &--text {
+      font-size: a.$p-font-size-small;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// PRICING
+
+.pricing {
+  &__heading {
+    text-align: left;
+    font-size: a.$h3-font-size-large;
+    line-height: 1.5;
+    color: a.$white;
+    span {
+      color: a.$secondary--orange;
+    }
+
+    @include a.respond(tab-land) {
+      font-size: a.$h4-font-size;
+    }
+
+    @include a.respond(phone-small) {
+      font-size: a.$h3-font-size-small;
+    }
+
+    @include a.respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: a.$p-font-size-large;
+
+    @include a.respond(tab-port) {
+      text-align: center;
+    }
+  }
+
+  &__right {
+    p {
+      font-size: a.$p-font-size-small;
+      color: a.$white;
+
+      @include a.respond(phone-small) {
+        font-size: a.$p-font-size;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__list {
+    &__heading {
+      color: a.$secondary--orange;
+      font-size: a.$p-font-size-medium;
+
+      @include a.respond(tab-land) {
+        font-size: a.$p-font-size-small;
+      }
+    }
+  }
+}
+
+// Portfolio
+
+.portfolio {
+  &__card {
+    &__header {
+      font-size: a.$h4-font-size;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: a.$white;
+    }
+
+    &__desc {
+      font-size: a.$p-font-size;
+      color: a.$white;
+      text-align: center;
+    }
+    &__link {
+      font-size: a.$h3-font-size-small;
+      text-decoration: none;
+      border-bottom: 2px solid a.$secondary--gold;
+      // padding-bottom: 1px;
+      color: a.$white;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: 0.3s all;
+
+      &:hover {
+        color: a.$secondary--gold;
+      }
+    }
+  }
+
+  &__button {
+    font-size: a.$h3-font-size-small;
+    text-decoration: none;
+  }
+}
+
+// Testimonials
+.testimonial {
+  &__heading {
+    font-size: a.$h3-font-size-small;
+    font-weight: 400;
+    span {
+      font-size: 3.6rem;
+
+      @include a.respond(phone) {
+        font-size: a.$h4-font-size;
+        font-weight: 700;
+      }
+    }
+  }
+  &__slide {
+    &__header {
+      font-size: a.$h4-font-size;
+      font-weight: 500;
+
+      @include a.respond(phone) {
+        font-size: a.$h3-font-size-small;
+      }
+    }
+
+    &__text {
+      font-size: 1.7rem;
+      margin-bottom: 3.5rem;
+      color: a.$secondary--black;
+      @include a.respond(phone) {
+        font-size: a.$phone;
+      }
+    }
+  }
+
+  &__author {
+    &__name {
+      font-size: 1.7rem;
+      font-weight: 500;
+
+      @include a.respond(phone-small) {
+        font-size: a.$phone;
+      }
+    }
+
+    &__location {
+      font-size: 1.5rem;
+      @include a.respond(phone-small) {
+        font-size: a.$phone;
+      }
+    }
+  }
+}
+
+// About - HOME PAGE
+.about {
+  &__text {
+    font-size: a.$p-font-size-large;
+    line-height: 1.6;
+
+    @include a.respond(phone-small) {
+      font-size: a.$p-font-size;
+    }
+  }
+
+  &__button {
+    text-decoration: none;
+    font-size: a.$p-font-size-large;
+    border-bottom: 2px solid a.$secondary--orange;
+    color: a.$secondary--blue;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    transition: all 0.3s;
+
+    &:hover {
+      // border-bottom: 2px solid a.$secondary--orange;
+      color: a.$secondary--orange;
+    }
+  }
+}
+
+// CARDS
+
+.cards {
+}
+.card {
+  &__header {
+    color: a.$white;
+    font-size: a.$p-font-size-large;
+  }
+  &__price {
+    font-size: a.$h4-font-size;
+    font-weight: 400;
+    color: a.$secondary--blue;
+
+    span {
+      font-size: a.$h2-font-size;
+      font-weight: 700;
+      &::before {
+        font-size: a.$h4-font-size;
+      }
+    }
+  }
+
+  &__button {
+    font-size: a.$p-font-size-small;
+    font-weight: 700;
+    color: a.$secondary--blue;
+    text-transform: uppercase;
+
+    &:hover {
+      color: a.$white;
+    }
+
+    &--fill {
+      color: a.$white;
+
+      &:hover {
+        color: a.$secondary--orange;
+      }
+    }
+  }
+
+  &__subprice {
+    font-size: a.$p-font-size-large;
+    color: a.$secondary--black;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: a.$p-font-size;
+    color: a.$secondary--black;
+  }
+  &__subprice {
+    font-size: a.$p-font-size-small;
+  }
+
+  &__list {
+    &__icon {
+      font-size: a.$p-font-size;
+      &--check {
+        color: a.$primary--green;
+        font-weight: 700;
+      }
+      &--X {
+        color: a.$secondary--rust;
+      }
+    }
+    &__text {
+      font-size: a.$p-font-size-small;
+      color: a.$secondary--black;
+      font-weight: 500;
+    }
+  }
+}
+
+.cta {
+  &__textbox {
+    // font-family: "Poppins", sans-serif;
+    color: a.$primary--blue;
+  }
+  &__header {
+    color: a.$secondary--blue;
+    // letter-spacing: -1px;
+    text-align: start;
+
+    @include a.respond(phone) {
+      font-size: a.$h3-font-size-small;
+    }
+  }
+
+  &__text {
+    color: a.$secondary--black;
+    font-size: a.$p-font-size-medium;
+    line-height: 1.8;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+      line-height: 1.4;
+    }
+  }
+
+  &__form {
+    label {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: a.$secondary--black;
+    }
+
+    input,
+    select {
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: inherit;
+
+      @include a.respond(phone) {
+        font-size: a.$p-font-size;
+      }
+    }
+
+    input::placeholder,
+    select {
+      color: #9e9e9e;
+    }
+  }
+  &__btn {
+    font-size: a.$h4-font-size;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: a.$white;
+
+    @include a.respond(tab-port) {
+      font-size: a.$h3-font-size-small;
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  color: a.$white;
+
+  &__logo {
+    text-decoration: none;
+    font-size: 2.4rem;
+    font-family: "Lora", serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: a.$white;
+
+    &--text {
+      font-weight: 400;
+      font-size: a.$h1-font-size-small;
+      line-height: 1;
+
+      @include a.respond(tab-land) {
+        font-size: a.$h3-font-size-large;
+      }
+    }
+  }
+
+  &__link {
+    font-size: a.$p-font-size-small;
+    color: a.$white;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.6;
+  }
+
+  &__contacts {
+    font-size: a.$p-font-size-small;
+    line-height: 1.6rem;
+    color: a.$white;
+    font-style: normal;
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @include a.respond(tab-port) {
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+
+    p {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    font-size: a.$p-font-size-small;
+    color: a.$white;
+    transition: all 0.3s;
+    font-weight: 500;
+  }
+
+  &__link:active,
+  &__link:hover {
+    color: #555;
+  }
+}
+
+////////////////////////////////////////
+// About - Inner page
+////////////////////////////////////////
+.about {
+  &__hero {
+    font-size: a.$h3-font-size-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: a.$white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+.history {
+  &__heading {
+    text-align: start;
+  }
+  &__text {
+    font-size: a.$p-font-size-large;
+    color: a.$secondary--black;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+    }
+  }
+}
+
+.icons {
+  font-size: 5rem;
+  color: a.$secondary--blue;
+}
+
+.where {
+  &__heading {
+    text-align: start;
+  }
+  &__text {
+    font-size: a.$p-font-size-large;
+    color: a.$secondary--black;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+    }
+  }
+}
+
+.qualities {
+  &__text {
+    text-align: center;
+    font-size: a.$p-font-size-large;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+
+      text-align: start;
+    }
+  }
+
+  &__icon__title {
+    font-size: a.$h4-font-size;
+    color: a.$secondary--blue;
+  }
+}
+
+////////////////////////////////////////
+// Services - Inner page
+////////////////////////////////////////
+.services {
+  &__hero {
+    font-size: a.$h3-font-size-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: a.$white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+.service {
+  &__header {
+    font-size: a.$h4-font-size;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-align: center;
+
+    span {
+      color: a.$primary--blue;
+    }
+  }
+
+  &__text {
+    font-size: a.$p-font-size-medium;
+  }
+}
+
+////////////////////////////////////////
+// Contact - Inner page
+////////////////////////////////////////
+.contact {
+  &__hero {
+    font-size: a.$h3-font-size-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: a.$white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  // FORM BOX
+  &__formbox {
+    &__heading {
+      font-size: a.$h4-font-size;
+      color: a.$secondary--gold;
+
+      @include a.respond(tab-land) {
+        font-size: a.$h3-font-size-small;
+      }
+    }
+  }
+
+  // FORM
+
+  &__form {
+    &__subheading {
+      font-size: a.$p-font-size;
+      color: a.$white;
+      font-weight: 500;
+
+      span {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+    }
+    &__field {
+    }
+    &__label {
+      font-size: a.$p-font-size;
+      font-weight: 500;
+      color: a.$white;
+    }
+    &__input {
+      font-size: a.$p-font-size;
+    }
+    &__butons {
+      &--1 {
+      }
+      &--2 {
+      }
+      &--3 {
+      }
+    }
+    &__button {
+      &__label {
+        font-size: a.$p-font-size;
+        color: a.$secondary--orange;
+        font-weight: 500;
+
+        span {
+          color: a.$white;
+        }
+      }
+    }
+    &__textarea {
+      font-size: a.$p-font-size;
+    }
+
+    &__submit {
+      font-size: a.$h3-font-size-small;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: a.$secondary--black;
+    }
+  }
+
+  //   INFOBOX
+
+  &__infobox {
+    &__textbox {
+    }
+
+    &__quote {
+      &--text {
+        font-size: a.$p-font-size-medium;
+        font-weight: 500;
+      }
+
+      &--author {
+        font-size: a.$p-font-size;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+    }
+    &__heading {
+      font-size: a.$h3-font-size-small;
+      color: a.$primary--blue;
+    }
+    &__text {
+      font-size: a.$p-font-size;
+    }
+  }
+}

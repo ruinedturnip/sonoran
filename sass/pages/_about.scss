@@ -1,0 +1,29 @@
+@use "../abstracts/" as a;
+
+.about {
+  &__landing {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(53, 144, 243, 0.35),
+        rgba(143, 184, 237, 0.35)
+      ),
+      url("../imgs/shared/desert-converted.webp");
+    background-position: 50% 70%;
+    height: 30rem;
+  }
+
+  &__history {
+    margin-top: 10rem;
+
+    @include a.respond(tab-small) {
+      margin-top: 5rem;
+    }
+  }
+  &__where {
+    margin-top: 10rem;
+  }
+
+  &__qualities {
+    margin-top: 10rem;
+  }
+}

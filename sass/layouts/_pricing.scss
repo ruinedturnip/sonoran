@@ -1,0 +1,194 @@
+@use "../abstracts/" as a;
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include a.respond(tab-port) {
+    flex-direction: column;
+  }
+
+  &__left {
+    width: 40%;
+    height: 70rem;
+    position: relative;
+
+    @include a.respond(tab-port) {
+      width: 60rem;
+      margin: 0 auto;
+      height: 20rem;
+      display: flex;
+    }
+
+    @include a.respond(phone) {
+      width: 30rem;
+    }
+
+    @include a.respond(phone) {
+      height: 17rem;
+    }
+  }
+
+  &__img {
+    width: 400px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+
+    @include a.respond(tab-land) {
+      width: 30rem;
+    }
+
+    @include a.respond(tab-port) {
+      width: 20rem;
+    }
+
+    @include a.respond(phone) {
+      width: 15rem;
+    }
+
+    &--1 {
+      position: absolute;
+      top: -75px;
+      z-index: 3;
+
+      &:hover {
+        transform: scale(1.05);
+        z-index: 10;
+      }
+
+      @include a.respond(tab-land) {
+        top: 75px;
+      }
+
+      @include a.respond(tab-port) {
+        bottom: 0;
+        left: 25%;
+        top: 0;
+        transform: translate(-50%, 0);
+      }
+
+      @include a.respond(phone) {
+        left: 20%;
+      }
+    }
+
+    &--2 {
+      position: absolute;
+      top: 150px;
+      left: 100px;
+      z-index: 5;
+      &:hover {
+        transform: scale(1.05);
+        z-index: 10;
+      }
+
+      @include a.respond(tab-land) {
+        top: 200px;
+        left: 50px;
+      }
+      @include a.respond(tab-port) {
+        bottom: 0;
+        top: -5%;
+        z-index: 15;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      @include a.respond(phone) {
+        top: 30%;
+      }
+    }
+
+    &--3 {
+      position: absolute;
+      bottom: 100px;
+
+      &:hover {
+        transform: scale(1.05);
+        z-index: 10;
+      }
+
+      @include a.respond(tab-land) {
+        bottom: 150px;
+      }
+      @include a.respond(tab-port) {
+        bottom: 0;
+        left: 75%;
+        z-index: 10;
+        top: 0;
+        transform: translate(-50%, 0);
+      }
+
+      @include a.respond(phone) {
+        left: 82%;
+      }
+
+      @include a.respond(phone-small) {
+        left: 75%;
+      }
+    }
+  }
+
+  &__right {
+    // margin-left: 300px;
+    width: 50%;
+    padding-bottom: 15rem;
+    z-index: 5;
+
+    @include a.respond(tab-land) {
+      width: 55%;
+    }
+
+    @include a.respond(tab-port) {
+      width: 55rem;
+      padding-bottom: 5rem;
+    }
+
+    @include a.respond(tab-small) {
+      padding-bottom: 5rem;
+    }
+
+    @include a.respond(phone) {
+      width: 37.5rem;
+    }
+
+    @include a.respond(phone-small) {
+      width: 30rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+    margin-top: 3rem;
+
+    @include a.respond(phone) {
+      grid-template-columns: 1fr;
+    }
+
+    &__row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__icon {
+    font-size: a.$h3-font-size-large;
+    color: a.$secondary--orange;
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+///////////                     Pricing                    /////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////*/

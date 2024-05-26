@@ -1,0 +1,220 @@
+@use "../abstracts/" as a;
+
+.boxes {
+  margin-top: 16rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 64rem;
+
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+
+  @include a.respond(tab-land) {
+    margin-top: 12rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+
+    height: 64.9rem;
+    row-gap: 2.5rem;
+  }
+
+  @include a.respond(phone) {
+    justify-items: center;
+  }
+}
+
+.box {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  transition: all 2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  @include a.respond(phone) {
+    width: 327px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &--1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../../imgs/home/desktop/image-web-design-large.jpg");
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgb(1, 109, 225, 0.5),
+          rgb(1, 109, 225, 0.5)
+        ),
+        url("../../imgs/home/desktop/image-web-design-large.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/tablet/image-web-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/mobile/image-web-design.jpg");
+      }
+    }
+
+    @include a.respond(tab-land) {
+      grid-column: 1/2;
+      grid-row: 1/2;
+
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/tablet/image-web-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/mobile/image-web-design.jpg");
+    }
+  }
+
+  &--2 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../../imgs/home/desktop/image-app-design.jpg");
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgb(1, 109, 225, 0.5),
+          rgb(1, 109, 225, 0.5)
+        ),
+        url("../../imgs/home/desktop/image-app-design.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/tablet/image-app-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/mobile/image-app-design.jpg");
+      }
+    }
+
+    @include a.respond(tab-land) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/tablet/image-app-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/mobile/image-app-design.jpg");
+    }
+  }
+  &--3 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../../imgs/home/desktop/image-graphic-design.jpg");
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    &:hover {
+      background-image: linear-gradient(
+          to right,
+          rgb(1, 109, 225, 0.5),
+          rgb(1, 109, 225, 0.5)
+        ),
+        url("../../imgs/home/desktop/image-graphic-design.jpg");
+      @include a.respond(tab-land) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/tablet/image-graphic-design.jpg");
+      }
+
+      @include a.respond(phone) {
+        background-image: linear-gradient(
+            to right,
+            rgb(1, 109, 225, 0.5),
+            rgb(1, 109, 225, 0.5)
+          ),
+          url("../../imgs/home/mobile/image-graphic-design.jpg");
+      }
+    }
+
+    @include a.respond(tab-land) {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/tablet/image-graphic-design.jpg");
+    }
+
+    @include a.respond(phone) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8)
+        ),
+        url("../../imgs/home/mobile/image-graphic-design.jpg");
+    }
+  }
+}

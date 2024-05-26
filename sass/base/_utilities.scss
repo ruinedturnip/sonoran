@@ -1,0 +1,30 @@
+@use "../abstracts/" as a;
+
+.container {
+  width: 110rem;
+  margin: 0 auto;
+
+  @include a.respond(tab-land) {
+    width: 90rem;
+  }
+
+  @include a.respond(tab-port) {
+    width: 69.5rem;
+  }
+
+  @include a.respond(tab-small) {
+    width: 59rem;
+  }
+
+  @include a.respond(phone) {
+    width: 37.5rem;
+  }
+
+  @include a.respond(phone-small) {
+    width: 30rem;
+  }
+}
+
+.hide {
+  display: none;
+}

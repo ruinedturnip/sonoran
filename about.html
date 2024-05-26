@@ -4,127 +4,226 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name=description content="Sonoran Studios Web Design About Page. Evan Nye. 2022.">
-    <script defer
-      src="https://kit.fontawesome.com/0ae45b2d7e.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name=description content="Sonoran Studios Web Design. Evan Nye. 2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link
     rel="preload"
     href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
-<noscript>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
-        rel="stylesheet"
-        type="text/css"
-    />
-</noscript>
-
-<script defer
-src="https://kit.fontawesome.com/0ae45b2d7e.js"
-crossorigin="anonymous"
-></script>
-
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="queries/mobile-about.css"/>
-
-    <title>About - Sonoran Studios</title>
+    <script defer
+      src="https://kit.fontawesome.com/0ae45b2d7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+<!-- 
+    <link rel="stylesheet" href="queries/mobile-home.css"/> -->
+    <title>About - Sonoran Studios Web Development</title>
   </head>
   <body>
-    <section class="landing">
-      <div class="overlay overlay-slide-left hide" id="overlay">
-        <nav class="mobile-nav">
-          <h1 class="mobile-logo">Sonoran Studios</h1>
-         
-            <ul class="mobile-nav-links">
-              <li class="nav-link mobile-nav-link" id="nav-1">
-                <a class=" mobile-link-nav" href="index.html">Home</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-2">
-                <a class=" mobile-link-nav" href="about.html">About</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-3">
-                <a class=" mobile-link-nav " href="services.html">Services</a>
-              </li>
-              <li class="nav-link mobile-nav-link" id="nav-4">
-                <a class="mobile-link-nav" href="#link">Portfolio</a>
-              </li>
-             <li class="nav-link mobile-nav-link" id="nav-5"> <a class="cta-btn" id="nav-5">Get Online</a></li>
-      
-            </ul>
-          
-        </nav>
-        <!-- Menu Items -->
-        
-      </div>
-      
-      <!-- Header Nav -->
-      <nav class="nav">
-        <a class="logo-link" href='index.html'><h1 id="logo">Sonoran Studios</h1></a>
-        <div class="main-nav">
-          <ul class="nav-links">
-            <li class="nav-link" id="nav-1">
-              <a class="link-nav" href="index.html">Home</a>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     LANDING                  /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+     <section class="section about__landing about">
+      <nav class="container nav">
+        <a href="index.html" class="nav__logo">Sonoran Studios</a>
+          <ul class="nav__links " id="navList">
+            <li class="nav__link" id="nav-1">
+              <a class="nav__link-nav" href="index.html">Home</a>
             </li>
-            <li class="nav-link" id="nav-2">
-              <a class="link-nav" href="about.html">About</a>
+            <li class="nav__link nav__link--active" id="nav-2">
+              <a class="nav__link-nav" href="about.html">About</a>
             </li>
-            <li class="nav-link" id="nav-3">
-              <a class="link-nav" href="services.html">Services</a>
+            <li class="nav__link" id="nav-3">
+              <a class="nav__link-nav" href="services.html">Services</a>
             </li>
-            <li class="nav-link" id="nav-4">
-              <a class="link-nav" href="#portfolio">Portfolio</a>
+            <li class="nav__link" id="nav-4">
+              <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__link" id="nav-4">
+              <a class="nav__link-nav" href="contact.html">Contact Us</a>
             </li>
           </ul>
-        </div>
-      
-        <div class="menu-bars hide" id="menu-bars">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div> 
+
+          <div class="nav__mobile hide" id="menuBars">
+            <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
+          </div>
+    
+          <div class="mobile hide" id="overlay">
+            <ul class="mobile__links " id="navList">
+              <li class="mobile__link">
+                <h2 class="mobile__link--title" >Sonoran Studios</a>
+              </li>
+              <li class="mobile__link mobile__link--active" id="nav-1">
+                <a class="mobile__link--nav" href="index.html">Home</a>
+              </li>
+              <li class="mobile__link" id="nav-2">
+                <a class="mobile__link--nav" href="about.html">About</a>
+              </li>
+              <li class="mobile__link" id="nav-3">
+                <a class="mobile__link--nav" href="services.html">Services</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          
       </nav>
 
-      <h2>About Us</h2>
-    </section>
-
-      <!-- ///////////////////////////////////////////////////////////////////////////////////
-    ///////////                     ABOUT                    /////////////////////////
+          <h1 class="about__hero">About Us</h1>
+  </section>
+   
+    
+        <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     history                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
-    <section class="section  container">
-      <div class="about about-1">
-        <picture class="about__headshot">
-          <img src="/imgs/me-converted.webp" alt="photo of Evan Nye-- lead web developer" class="img__headshot" height="600px" width="450px">
-        </picture>
-        <div class="about--left">
-          
-          <div class="about__text">
-            <h2 class="section-heading about_heading"> A <span>certified</span> web developer</h2>
-            <p>Hi! My name is Evan, a self taught web developer hailing from the beautiful Sonoran Desert. Though I now reside in Arlington, Virginia I haven't forgotten my roots. The beauty and serenity of the desert informs my design choices. 
-            </p>
-            <p>I've taught myself to code over the course of the last year. I've completed multiple courses on html, css, and javascript and developed sound fundamentals so my code is clean, efficient, and completely manipulatable. I now have multiple certificiations in web development and have built countless professional, effective websites. </p>
-            
-            <p>This means I have complete control over my code and can offer reasonable rates that aren't bloated with overhead costs. You're a small business and don't have the budget of a multi-million dollar corporation- I get that!</p>
+
+        <section class="about__history">
+          <div class="history container">
+          <!-- Left Image Box -->
+          <div class="history__imgbox">
+           <div class="history__img"></div>
           </div>
-          <div class="icons">
-            <i class="fa-brands fa-html5 about--icon"></i>
-            <i class="fa-brands fa-css3-alt about--icon"></i>
-            <i class="fa-brands fa-sass about--icon"></i>
-            <i class="fa-brands fa-js about--icon"></i>
-            <i class="fa-brands fa-squarespace about--icon"></i>
+
+           <!-- Right Text Box -->
+           <div class="history__textbox">
+            <h3 class="section__heading history__heading">I'm <span>Evan</span> - A Student and a <span>Web Developer!</span> </h3>
+            <p class="history__text">I'm a self taught web developer hailing from the beautiful Sonoran Desert. Though I now reside in Arlington, Virginia I haven't forgotten my roots. I'm also soon to be a student in grad school, studying international relations.
+
+            <p class="history__text">
+              Over the last two years, I've taught myself to code and make beautiful websites. I've received multiple certifications on html, css, and javascript, and developed sound fundamentals so my code is clean, efficient, and completely manipulatable. I now have multiple certificiations in web development and have built countless professional, effective websites.
+            </p>
+            <p class="history__text">
+              This means I have complete control over my code and can offer reasonable rates that aren't bloated with overhead costs. You're a small business - it's important that you have an online presence that doesn't break the bank.</p>
+           </p>
           </div>
         </div>
+      </section>
+
+      <div class="icons container">
+        <i class="fa-brands fa-html5 about--icon" aria-hidden="true"></i>
+        <i class="fa-brands fa-css3-alt about--icon" aria-hidden="true"></i>
+        <i class="fa-brands fa-sass about--icon" aria-hidden="true"></i>
+        <i class="fa-brands fa-js about--icon" aria-hidden="true"></i>
+        <i class="fa-brands fa-squarespace about--icon" aria-hidden="true"></i>
       </div>
-     
+
+           <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Where                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <section class="about__where">
+        <div class="where container">
+        <!-- Left Image Box -->
+        <div class="where__imgbox where__imgbox">
+        
+        </div>
+
+         <!-- Right Text Box -->
+         <div class="where__textbox">
+          <h3 class="section__heading where__heading">From <span>Tucson</span> to Arlington </h3>
+          <p class="where__text">Two years ago, I moved to Arlington from Arizona. Everywhere I lived, I have gotten involved in my local community. At Sonoran Studios, nothing brings us greater joy than helping small businesses in our hometowns.
+            
+
+          <p class="where__text">
+            Is your business somewhere else? No worries! Our websites look the same whether you are in Arizona, Florida, or Texas, so don't hesitate to reach out.
+          </p>
+        
+        </div>
+      </div>
     </section>
-  <!-- ///////////////////////////////////////////////////////////////////////////////////
+           <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     Qualities                    /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <section class="about__qualities">
+       <div class="qualities container">
+
+        <h3 class="qualities__header section__heading">Websites for <span>Wellness Professionals</span></h3>
+        <p class="qualities__text"> We build websites for professionals and small businesseses in the counseling, beauty, and health industries. Our websites make it easy to contact you and show your services, helping your customers to take that next step in their personal wellness journey. </p>
+        <div class="qualities__columns">
+          <div class="qualities__column qualities__column--1">
+            <picture>
+              <img src="./imgs/about/icons8-nails__real.svg" alt="" class="qualities__icon">
+            </picture>
+            <h4 class="qualities__icon__title">Beauty</h4>
+          </div>
+          <div class="qualities__column qualities__column--2">
+            <picture>
+              <img src="./imgs/about/icons8-healthy.svg" alt="" class="qualities__icon">
+            </picture>
+            <h4 class="qualities__icon__title">Health</h4>
+          </div>
+          <div class="qualities__column qualities__column--3">
+            <picture>
+              <img src="./imgs/about/icons8-counseling.svg" alt="" class="qualities__icon">
+            </picture>
+            <h4 class="qualities__icon__title">Counseling</h4>
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
     ///////////                     CTA                    /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="section section__cta">
+      <div class="container cta">
+        <div class="cta__textbox">
+          <h2 class="cta__header section__heading">Do you need a website?</h2>
+          <p class="cta__text">Get a fast, well-designed, and affordable website today. Generate sales and boost your profits. I will work with you throughout the entire process.</p>
+          <form action="#" data-netlify="true" name="cta__form" class="cta__form">
+            <div>
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Your name" name="fullname" id="name" required>
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              name="email"
+              required
+              />
+            </div>
+            <div>
+              <label for="select-where">Where did you hear about us?</label>
+              <select id="select-where" name='hear'required>
+                <option value="">Please choose one option</option>
+                <option value="Friends">Friends and family</option>
+                <option value="Direct">Direct Outreach</option>
+                <option value="Facebook ad">Facebook ad</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <button class="btn cta__btn">Get in touch</button>
+          </form>
+        </div>
+        <div
+          class="cta__imgbox"
+          role="img"
+          alt="Woman enjoying food"
+          ></div>
+      </div>
+    </div>
+<!-- 
     <section class="section section-cta">
-      <div class="container">
+      <div class="container flex-center">
 
         <div class="cta">
           <div class="cta-text-box">
@@ -135,7 +234,7 @@ crossorigin="anonymous"
               entire process.
             </p>
             
-            <form class="cta-form" action="#" data-netlify="true" name="cta-form-about">
+            <form class="cta-form" action="#" data-netlify="true" name="cta-form">
               <div>
                 <label for="full-name">Full Name</label>
                 <input
@@ -147,19 +246,19 @@ crossorigin="anonymous"
                 />
               </div>
               <div>
-                <label for="email">Email address</label>
+                <label for="email-cta">Email address</label>
                 <input
-                id="email"
+                id="email-cta"
                 type="email"
                 placeholder="me@example.com"
                 name="email"
                 required
                 />
-              </div>
+              </div>          
               
               <div>
                 <label for="select-where">Where did you hear about us?</label>
-                <select id="select-where" name='hear' required>
+                <select id="select-where" name='hear'required>
                   <option value="">Please choose one option</option>
                   <option value="Friends">Friends and family</option>
                   <option value="Direct">Direct Outreach</option>
@@ -174,80 +273,77 @@ crossorigin="anonymous"
           <div
           class="cta-img-box"
           role="img"
-          aria-label="Woman enjoying food"
+          alt="Woman enjoying food"
           ></div>
         </div>
       </div>
     </div>
 
-    </section>
+    </section> -->
   </main>
-  <footer class="section footer">
-
-    <div class="container grid grid--footer">
-      <div class="logo-col">
-        <a href="#" class="footer-logo">
-          <h1 class="foot-logo">Sonoran Studios</h1>
+  <footer class="section section__footer">
+    <div class="container footer">
+      <div class="footer__col--1">
+        <a href="#" class="footer__logo">
+          <p class="footer__logo--text">Sonoran Studios</p>
         </a>
 
-        <ul class="social-links">
-          <li>
-            <a class="footer-link" href="#" aria-label="Instagram"
-              ><i class="fa-brands fa-instagram"></i></a>
+        <ul class="footer__social-links">
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Facebook"
-              ><i class="fa-brands fa-facebook"></i></a>
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </li>
-          <li>
-            <a class="footer-link" href="#" aria-label="Twitter"
-              ><i class="fa-brands fa-twitter"></i></a>
+          <li class="social__icon"> 
+            <a href="#" class="footer__link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </li>
         </ul>
 
-        <p class="copyright">
-          Copyright &copy; 2027 by Sonoran Studios. All rights reserved.
-        </p>
+        <p class="footer__copyright"> Copyright &copy; 2027 by Sonoran Studios. All rights reserved.</p>
       </div>
-
-      <div class="address-col">
-        <p class="footer-heading">Contact us</p>
-        <address class="contacts">
-          <p class="address">
-            1029 N. George Mason Dr.
-          </p>
+      <div class="footer__col--2">
+        <p class="footer__heading">Contact Us</p>
+        <address class="footer__contacts">
+          <p class="footer__address">Arlington, VA 22205</p>
           <p>
-            <a class="footer-link" href="tel:415-201-6370">(520) 591-6428</a
-            ><br />
-            <a class="footer-link" href="mailto:evan.sonoranstudios@gmail.com"
-              >evan.sonoranstudios@gmail.com</a
-            >
+            <a  class="footer__link footer__phone">(520) 591-6428</a>
           </p>
+          <a class="footer__link" href="mailto:evan.sonoranstudios@gmail.com"
+          >evan.sonoranstudios@gmail.com</a
+        >
         </address>
       </div>
-
-      <nav class="nav-col">
-        <p class="footer-heading">Navigation</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="#" aria-label="home">Home</a></li>
-          <li><a class="footer-link" href="about.html" aria-label="about">About</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="services">Services</a></li>
-          <li><a class="footer-link" href="#link" aria-label="portfolio">Portfolio</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="#" aria-label="home">Home</a></li>
+          <li><a class="footer__link" href="about.html" aria-label="about">About</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="services">Services</a></li>
+          <li><a class="footer__link" href="#link" aria-label="portfolio">Portfolio</a></li>
 
         </ul>
       </nav>
 
-      <nav class="nav-col">
-        <p class="footer-heading">Services</p>
-        <ul class="footer-nav">
-          <li><a class="footer-link" href="services.html" aria-label="Services">Web Design</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Website Maintenance</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">Content Creation</a></li>
-          <li><a class="footer-link" href="services.html" aria-label="Services">SEO Services</a></li>
+      <nav class="footer__nav">
+        <p class="footer__heading">Services</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="services.html" aria-label="Services">Web Design</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Website Maintenance</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Content Creation</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">SEO Services</a></li>
         </ul>
+      </nav>
+
       </nav>
     </div>
   </footer>
-    <script defer src="about.js"></script>
+  <script defer src="script.js"></script>
   </body>
   </html>

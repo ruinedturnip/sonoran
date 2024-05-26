@@ -1,0 +1,67 @@
+@use "../abstracts/" as a;
+
+.qualities {
+  &__header {
+    text-align: center;
+    margin-bottom: 2.4rem;
+
+    @include a.respond(phone) {
+      text-align: center;
+      // width: 80%;
+      align-self: center;
+    }
+  }
+  &__columns {
+    display: flex;
+    width: 100%;
+
+    @include a.respond(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__column {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    picture {
+      position: relative;
+      margin-top: 5rem;
+
+      &::after {
+        content: "";
+        width: 10rem;
+        height: 10rem;
+        background: linear-gradient(
+          to left,
+          a.$secondary--orange,
+          a.$secondary--gold
+        );
+        opacity: 0.5;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -5;
+      }
+    }
+  }
+  &__icon {
+    height: 7.2rem;
+    width: 7.2rem;
+
+    &__title {
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__text {
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    width: 80%;
+  }
+}

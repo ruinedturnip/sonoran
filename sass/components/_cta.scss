@@ -1,0 +1,126 @@
+@use "../abstracts/" as a;
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(53, 144, 243, 0.35),
+    rgb(143, 184, 237, 0.35)
+  );
+  /* temporary */
+  overflow: hidden;
+
+  @include a.respond(phone) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__textbox {
+    // font-family: "Poppins", sans-serif;
+    // color: #3590f3;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+    @include a.respond(tab-port) {
+      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4.8rem;
+
+    @include a.respond(phone) {
+      margin-bottom: 2.4rem;
+      margin-top: 2rem;
+    }
+  }
+
+  &__imgbox {
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(53, 144, 243, 0.35),
+        rgb(143, 184, 237, 0.35)
+      ),
+      url("../imgs/shared/website-converted.webp");
+    background-size: cover;
+    background-position: center;
+
+    @include a.respond(phone) {
+      height: 15rem;
+    }
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+
+    @include a.respond(phone) {
+      grid-template-columns: 1fr;
+
+      row-gap: 1.4rem;
+    }
+
+    label {
+      display: block;
+      //   font-size: 1.6rem;
+      //   font-weight: 500;
+      margin-bottom: 1.2rem;
+      //   color: #646464;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 1.2rem;
+      //   font-size: 1.8rem;
+      //   font-family: inherit;
+      //   color: inherit;
+      border: none;
+      background-color: #fdf2e9;
+      border-radius: 9px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+      @include a.respond(phone) {
+        height: 4rem;
+      }
+    }
+
+    select {
+      @include a.respond(phone) {
+        height: 5rem;
+      }
+    }
+    form div {
+      align-items: flex-start;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    align-self: flex-end;
+    width: 222px;
+    height: 48px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
+    background-color: a.$secondary--orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: a.$secondary--gold;
+    }
+  }
+}
+
+.btn {
+  width: 100%;
+  align-self: flex-end;
+}

@@ -1,0 +1,10 @@
+@use "../abstracts/" as a;
+
+.section {
+  &__portfolio {
+    &--p {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+}

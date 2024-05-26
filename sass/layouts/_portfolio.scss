@@ -1,0 +1,104 @@
+@use "../abstracts/" as a;
+
+.portfolio {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10rem;
+    row-gap: 5rem;
+    margin-top: 5rem;
+
+    @include a.respond(tab-port) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2.5rem;
+    }
+
+    @include a.respond(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__card {
+    height: 40rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    // border: 1px solid a.$primary--blue;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    @include a.respond(tab-land) {
+      height: 30rem;
+    }
+
+    @include a.respond(tab-port) {
+      width: 25rem;
+      margin: 0 auto;
+    }
+
+    &__img {
+      display: block;
+      //   aspect-ratio: 1/1;
+      object-fit: fill;
+      //   height: 100%;
+      width: 100%;
+      transition: 0.2s ease-in;
+    }
+
+    &__content {
+      position: absolute;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(0% 50%, 100% 45%, 100% 100%, 0% 100%);
+      background-color: a.$primary--blue;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 4rem;
+      transition: 0.2s ease-out;
+
+      @include a.respond(tab-land) {
+        padding-bottom: 2rem;
+        gap: 0.5rem;
+      }
+    }
+
+    &__desc {
+      width: 75%;
+    }
+  }
+
+  &__button {
+    width: 20rem;
+    height: 5rem;
+    margin: 5rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: a.$secondary--rust;
+    color: a.$white;
+    border-radius: 8px;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: a.$primary--blue;
+    }
+  }
+}
+
+.portfolio__card > .portfolio__card__content.fade {
+  opacity: 0;
+}
+.portfolio__card:hover > .portfolio__card__content.fade {
+  opacity: 1;
+}
+// .portfolio__card:hover > .portfolio__card__img.blur {
+//   filter: blur(2px);
+// }

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name=description content="Sonoran Studios Web Design. Evan Nye. 2022.">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+/>
+    <script defer
+      src="https://kit.fontawesome.com/0ae45b2d7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+<!-- 
+    <link rel="stylesheet" href="queries/mobile-home.css"/> -->
+    <title>Contact - Sonoran Studios Web Development</title>
+  </head>
+  <body>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////
+    ///////////                     LANDING                  /////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////////// -->
+    <main>
+     <section class="section contact__landing contact">
+      <nav class="container nav">
+        <a href="index.html" class="nav__logo">Sonoran Studios</a>
+          <ul class="nav__links " id="navList">
+            <li class="nav__link" id="nav-1">
+              <a class="nav__link-nav" href="index.html">Home</a>
+            </li>
+            <li class="nav__link" id="nav-2">
+              <a class="nav__link-nav" href="about.html">About</a>
+            </li>
+            <li class="nav__link" id="nav-3">
+              <a class="nav__link-nav" href="services.html">Services</a>
+            </li>
+            <li class="nav__link" id="nav-4">
+              <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav__link nav__link--active" id="nav-4">
+              <a class="nav__link-nav" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="nav__mobile hide" id="menuBars">
+            <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
+          </div>
+    
+          <div class="mobile hide" id="overlay">
+            <ul class="mobile__links " id="navList">
+              <li class="mobile__link">
+                <h2 class="mobile__link--title" >Sonoran Studios</a>
+              </li>
+              <li class="mobile__link mobile__link--active" id="nav-1">
+                <a class="mobile__link--nav" href="index.html">Home</a>
+              </li>
+              <li class="mobile__link" id="nav-2">
+                <a class="mobile__link--nav" href="about.html">About</a>
+              </li>
+              <li class="mobile__link" id="nav-3">
+                <a class="mobile__link--nav" href="services.html">Services</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="mobile__link" id="nav-4">
+                <a class="mobile__link--nav" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          
+      </nav>
+
+          <h1 class="contact__hero">Contact Us</h1>
+  </section>
+  <section class="contact__section" >
+    <div class="container contact__boxes">
+
+    <div class="contact__formbox">
+      <div class="contact__formbox__inner">
+        <div class="contact__formbox__textbox">
+          <h2 class="contact__formbox__heading">Fill out the form below to get started</h2>
+        </div>
+          <div class="contact__formbox__form">
+            <form action="submit" class="contact__form">
+              <div class="contact__form__field">
+                <label for="Name" class="contact__form__label">Full Name</label>
+                <input type="text" class="contact__form__input" label="Name" placeholder="John Doe" required>
+              </div>
+              <div class="contact__form__field">
+                <label for="Email" class="contact__form__label">Email</label>
+                <input type="email" class="contact__form__input" label="Email" required placeholder="@gmail.com">
+              </div>
+              <div class="contact__form__field">
+                <label for="Phone" class="contact__form__label">Phone</label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="contact__form__input" label="Phone" placeholder="999-999-9999" required>
+              </div>
+
+              <p class="contact__form__subheading">Select the plan you are interested in <span>(optional)</span></p>
+              <div class="contact__form__buttons">
+                
+                <div class="contact__form__buttons--1">
+                  <label for="pricing-plan" class="contact__form__button__label">Blog <span>$150/mo</span></label>
+                  <input type="radio" class="contact__form__button" name="pricing-plan" value="standard">
+                </div>
+                <div class="contact__form__buttons--2">
+                  <label for="pricing-plan" class="contact__form__button__label">Basic <span>$300/mo</span></label>
+                  <input type="radio" class="contact__form__button" name="pricing-plan" value="blog">
+                </div>
+                <div class="contact__form__buttons--3">
+                  <label for="pricing-plan" class="contact__form__button__label">Professional <span>$2000</span></label>
+                  <input type="radio" class="contact__form__button" name="pricing-plan" value="business">
+                </div>
+              </div>
+              <textarea name="textarea" class="contact__form__textarea" id="general-comments" row="5"></textarea>
+              <input type="submit" value="submit" class="contact__form__submit">
+          </form>
+          </div>
+      </div>
+    </div>
+
+    <div class="contact__infobox">
+      <div class="contact__infobox__inner">
+        <div class="contact__infobox__textbox">
+          <div class="contact__infobox__quote">
+            <p class="contact__infobox__quote--text">"Evan was super helpful, incredibly knowledgeable, and quick to solve my problem. He accurately diagnosed the problem with my website’s newsletter page and quickly solved it with an elegant solution."</p>
+           
+           <div class="contact__infobox__quote__authorbox">
+            <img src="imgs/home/user-1converted.webp" class="contact__infobox__quote--photo" alt='headshot' width='65px' height='65px'/>
+             <p class="contact__infobox__quote--author">Coby Jones, author</p>
+            </div>
+          </div>
+          
+          <div class="contact__infobox__contact-box">
+
+            <div class="contact__infobox__email">
+              <h3 class="contact__infobox__heading">Email</h3>
+              <p class="contact__infobox__text">evan.sonoranstudios@gmail.com</p>
+            </div>
+            <div class="contact__infobox__phone">
+              <h3 class="contact__infobox__heading">Phone</h3>
+              <p class="contact__infobox__text">(520) 591-6428</p>
+            </div>
+            <div class="contact__infobox__location">
+              <h3 class="contact__infobox__heading">Location</h3>
+              <p class="contact__infobox__text">Arlington, VA</p>
+            </div>
+          </div>
+   
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <!-- <section class="contact__form">
+
+
+
+
+
+    <div class="form container">
+        <form action="submit">
+            <label for="Name" class="contact__form__label">Name</label>
+            <input type="text" class="contact__form__input" label="Name">
+            <label for="Name" class="contact__form__label">Name</label>
+            <input type="text" class="contact__form__input" label="Name">
+            <label for="Name" class="contact__form__label">Name</label>
+            <input type="text" class="contact__form__input" label="Name">
+        </form>
+    </div> 
+  </section> 
+   
+
+
+    <section class="section section-cta">
+      <div class="container flex-center">
+
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="section-heading cta-heading">Do you need a website?</h2>
+            <p class="cta-text">
+              Get a fast, well-designed, and affordable website today. Generate
+              sales and boost your profits. I will work with you throughout the
+              entire process.
+            </p>
+            
+            <form class="cta-form" action="#" data-netlify="true" name="cta-form">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                id="full-name"
+                type="text"
+                placeholder="Your name"
+                name="fullname"
+                required
+                />
+              </div>
+              <div>
+                <label for="email-cta">Email address</label>
+                <input
+                id="email-cta"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+                />
+              </div>          
+              
+              <div>
+                <label for="select-where">Where did you hear about us?</label>
+                <select id="select-where" name='hear'required>
+                  <option value="">Please choose one option</option>
+                  <option value="Friends">Friends and family</option>
+                  <option value="Direct">Direct Outreach</option>
+                  <option value="Facebook ad">Facebook ad</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <button class="btn cta-btn">Get in touch</button>
+            </form>
+          </div>
+          <div
+          class="cta-img-box"
+          role="img"
+          alt="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    </section> -->
+  </main>
+  <footer class="section section__footer">
+    <div class="container footer">
+      <div class="footer__col--1">
+        <a href="#" class="footer__logo">
+          <p class="footer__logo--text">Sonoran Studios</p>
+        </a>
+
+        <ul class="footer__social-links">
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social__icon">
+            <a href="#" class="footer__link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li class="social__icon"> 
+            <a href="#" class="footer__link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copyright"> Copyright &copy; 2027 by Sonoran Studios. All rights reserved.</p>
+      </div>
+      <div class="footer__col--2">
+        <p class="footer__heading">Contact Us</p>
+        <address class="footer__contacts">
+          <p class="footer__address">Arlington, VA 22205</p>
+          <p>
+            <a  class="footer__link footer__phone">(520) 591-6428</a>
+          </p>
+          <a class="footer__link" href="mailto:evan.sonoranstudios@gmail.com"
+          >evan.sonoranstudios@gmail.com</a
+        >
+        </address>
+      </div>
+      <nav class="footer__nav">
+        <p class="footer__heading">Navigation</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="#" aria-label="home">Home</a></li>
+          <li><a class="footer__link" href="about.html" aria-label="about">About</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="services">Services</a></li>
+          <li><a class="footer__link" href="#link" aria-label="portfolio">Portfolio</a></li>
+
+        </ul>
+      </nav>
+
+      <nav class="footer__nav">
+        <p class="footer__heading">Services</p>
+        <ul class="footer__nav__links">
+          <li><a class="footer__link" href="services.html" aria-label="Services">Web Design</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Website Maintenance</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">Content Creation</a></li>
+          <li><a class="footer__link" href="services.html" aria-label="Services">SEO Services</a></li>
+        </ul>
+      </nav>
+
+      </nav>
+    </div>
+  </footer>
+  <script defer src="script.js"></script>
+  </body>
+  </html>
