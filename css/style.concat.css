@@ -944,7 +944,7 @@ html {
   height: 100%;
   background-size: cover;
   background-position: bottom;
-  background-image: url("/imgs/home/desktop/hero.svg");
+  background-image: url("/imgs/home/desktop/hero.webp");
 }
 @media only screen and (max-width: 75em) {
   .hero__img {
