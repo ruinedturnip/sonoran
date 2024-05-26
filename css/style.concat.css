@@ -942,9 +942,7 @@ html {
 .hero__img {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("/imgs/home/desktop/hero.webp");
+  transform: translateY(-10rem);
 }
 @media only screen and (max-width: 75em) {
   .hero__img {
@@ -956,11 +954,6 @@ html {
 @media only screen and (max-width: 56.25em) {
   .hero__img {
     transform: translateY(-10rem);
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .hero__img {
-    background-image: url("/imgs/home/mobile/hero-mobile.webp");
   }
 }
 

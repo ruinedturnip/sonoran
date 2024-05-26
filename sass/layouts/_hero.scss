@@ -76,9 +76,10 @@
   &__img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: bottom;
-    background-image: url("/imgs/home/desktop/hero.webp");
+    // background-size: cover;
+    // background-position: bottom;
+    // background-image: url("/imgs/home/desktop/hero.webp");
+    transform: translateY(-10rem);
 
     @include a.respond(tab-land) {
       transform: translate(7rem, -5rem);
@@ -89,9 +90,9 @@
       transform: translateY(-10rem);
     }
 
-    @include a.respond(phone) {
-      background-image: url("/imgs/home/mobile/hero-mobile.webp");
-    }
+    // @include a.respond(phone) {
+    //   background-image: url("/imgs/home/mobile/hero-mobile.webp");
+    // }
   }
 }
 

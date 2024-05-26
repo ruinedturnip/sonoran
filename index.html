@@ -98,7 +98,16 @@
               <div class="hero__imgs">
   
                 <div class="hero__imgbox">
-                  <div class="hero__img"></div>
+                  <picture>
+                    <source media="(min-width: 650px)" srcset="imgs/home/desktop/hero.webp">
+                    <source media="(min-width: 300px)" srcset="imgs/home/mobile/hero-mobile.webp">
+                    <img
+                    src="imgs/home/desktop/hero.webp"
+                    class="hero__img"
+                    alt="man at computer"
+                    
+                    />
+         
                 </div>
           
           </div>
@@ -318,7 +327,7 @@
         <h2 class="section__heading portfolio__heading">Our <span>Portfolio</span></h2>
         <div class="portfolio__container">
         <div class="portfolio__card portfolio__card--1 ">
-          <img src="/imgs/home/desktop/designo-screenshot.webp" alt="designo webpage" class="portfolio__card__img portfolio__card__img--1 blur">
+          <img src="/imgs/home/desktop/designo-screenshot.webp" alt="designo webpage" height="400px" width="300px" class="portfolio__card__img portfolio__card__img--1 blur">
           <div class="portfolio__card__content fade">
             <p class="portfolio__card__header">Designo</p>
             <p class="portfolio__card__desc">Sample website for a digitial design agency</p>
