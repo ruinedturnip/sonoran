@@ -332,10 +332,10 @@ html {
     font-weight: 400;
     span {
       font-size: 3.6rem;
+      font-weight: 700;
 
       @include a.respond(phone) {
         font-size: a.$h4-font-size;
-        font-weight: 700;
       }
     }
   }
@@ -434,6 +434,8 @@ html {
     font-weight: 700;
     color: a.$secondary--blue;
     text-transform: uppercase;
+
+    text-decoration: none;
 
     &:hover {
       color: a.$white;
@@ -730,7 +732,17 @@ html {
   }
 
   &__text {
-    font-size: a.$p-font-size-medium;
+    font-size: a.$p-font-size-large;
+
+    color: a.$secondary--black;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+    }
   }
 }
 
@@ -829,7 +841,77 @@ html {
       color: a.$primary--blue;
     }
     &__text {
+      font-size: a.$p-font-size-large;
+    }
+  }
+}
+
+.modal {
+  &__hero {
+    font-size: a.$h3-font-size-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: a.$white;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+  }
+
+  // FORM BOX
+  &__formbox {
+    &__heading {
+      font-size: a.$h4-font-size;
+      color: a.$secondary--gold;
+
+      @include a.respond(tab-land) {
+        font-size: a.$h3-font-size-small;
+      }
+    }
+  }
+
+  // FORM
+
+  &__form {
+    &__subheading {
       font-size: a.$p-font-size;
+      color: a.$white;
+      font-weight: 500;
+
+      span {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+    }
+
+    &__label {
+      font-size: a.$p-font-size;
+      font-weight: 500;
+      color: a.$white;
+    }
+    &__input {
+      font-size: a.$p-font-size;
+    }
+
+    &__button {
+      &__label {
+        font-size: a.$p-font-size;
+        color: a.$secondary--orange;
+        font-weight: 500;
+
+        span {
+          color: a.$white;
+        }
+      }
+    }
+    &__textarea {
+      font-size: a.$p-font-size;
+    }
+
+    &__submit {
+      font-size: a.$h3-font-size-small;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: a.$secondary--black;
     }
   }
 }

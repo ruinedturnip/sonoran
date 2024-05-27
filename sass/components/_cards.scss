@@ -84,6 +84,9 @@
     background-color: a.$white;
     outline: none;
     transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       background-color: a.$secondary--blue;

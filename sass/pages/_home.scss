@@ -6,7 +6,7 @@
     background-color: a.$primary--blue;
     height: 95vh;
 
-    @include a.respond(tab-port) {
+    @include a.respond(tab-land) {
       height: 125vh;
     }
 

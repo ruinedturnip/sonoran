@@ -289,11 +289,11 @@ html {
 }
 .testimonial__heading span {
   font-size: 3.6rem;
+  font-weight: 700;
 }
 @media only screen and (max-width: 37.5em) {
   .testimonial__heading span {
     font-size: 2.4rem;
-    font-weight: 700;
   }
 }
 .testimonial__slide__header {
@@ -376,6 +376,7 @@ html {
   font-weight: 700;
   color: rgb(48, 105, 178);
   text-transform: uppercase;
+  text-decoration: none;
 }
 .card__button:hover {
   color: #f7f7ff;
@@ -632,7 +633,18 @@ html {
   color: rgb(1, 109, 225);
 }
 .service__text {
-  font-size: 17px;
+  font-size: 19px;
+  color: #383d3b;
+}
+@media only screen and (max-width: 56.25em) {
+  .service__text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .service__text {
+    font-size: 15px;
+  }
 }
 
 .contact__hero {
@@ -701,7 +713,60 @@ html {
   color: rgb(1, 109, 225);
 }
 .contact__infobox__text {
+  font-size: 19px;
+}
+
+.modal__hero {
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f7f7ff;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+}
+.modal__formbox__heading {
+  font-size: 2.4rem;
+  color: #f4c95d;
+}
+@media only screen and (max-width: 75em) {
+  .modal__formbox__heading {
+    font-size: 1.8rem;
+  }
+}
+.modal__form__subheading {
   font-size: 15px;
+  color: #f7f7ff;
+  font-weight: 500;
+}
+.modal__form__subheading span {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.modal__form__label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #f7f7ff;
+}
+.modal__form__input {
+  font-size: 15px;
+}
+.modal__form__button__label {
+  font-size: 15px;
+  color: rgb(246, 170, 28);
+  font-weight: 500;
+}
+.modal__form__button__label span {
+  color: #f7f7ff;
+}
+.modal__form__textarea {
+  font-size: 15px;
+}
+.modal__form__submit {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #383d3b;
 }
 
 *,
@@ -2396,7 +2461,7 @@ html {
   background-color: rgb(1, 109, 225);
   height: 95vh;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .section__landing {
     height: 125vh;
   }
@@ -2811,6 +2876,9 @@ html {
   background-color: #f7f7ff;
   outline: none;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card__button:hover {
   background-color: rgb(48, 105, 178);
@@ -2872,6 +2940,117 @@ html {
   .icons {
     width: 80%;
   }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -50%);
+  z-index: 100;
+}
+.modal__formbox {
+  width: 200%;
+  background-color: rgb(1, 109, 225);
+  border-radius: 8px;
+  display: flex;
+  gap: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .modal__formbox {
+    width: 100%;
+  }
+}
+.modal__formbox__left {
+  width: 50%;
+  padding: 30px;
+}
+.modal__formbox__imgbox {
+  width: 50%;
+}
+.modal__formbox__textbox {
+  width: 100%;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.modal__form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.modal__form__input {
+  height: 3rem;
+  padding: 0rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+.modal__form__input:active {
+  outline: none;
+}
+.modal__form__input:focus {
+  outline: none;
+}
+.modal__form__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal__form__buttons--1 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal__form__buttons--2 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal__form__buttons--3 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 0.5rem;
+}
+.modal__form__button {
+  height: 2rem;
+  width: 2rem;
+}
+.modal__form__button__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__form__textarea {
+  height: 10rem;
+  padding: 1rem 1rem;
+  border: none;
+  resize: none;
+  border-radius: 8px;
+}
+.modal__form__textarea:focus {
+  outline: none;
+}
+.modal__form__submit {
+  height: 4rem;
+  width: 15rem;
+  align-self: flex-end;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f4c95d;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.modal__form__submit:hover {
+  background-color: rgb(246, 170, 28);
+}
+.modal__img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

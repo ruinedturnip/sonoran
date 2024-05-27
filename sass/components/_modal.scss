@@ -1,0 +1,131 @@
+@use "../abstracts/" as a;
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-100%, -50%);
+
+  z-index: 100;
+  &__formbox {
+    width: 200%;
+    background-color: a.$primary--blue;
+    border-radius: 8px;
+
+    display: flex;
+    gap: 3rem;
+
+    @include a.respond(tab-port) {
+      width: 100%;
+    }
+
+    &__left {
+      width: 50%;
+      padding: 30px;
+    }
+
+    &__imgbox {
+      width: 50%;
+    }
+
+    &__textbox {
+      width: 100%;
+    }
+  }
+
+  // FORM
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    &__label {
+    }
+    &__input {
+      height: 3rem;
+      padding: 0rem 1rem;
+      border: none;
+      border-radius: 8px;
+      &:active {
+        outline: none;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &--1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      &--2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      &--3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    &__button {
+      height: 2rem;
+      width: 2rem;
+      &__label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &__textarea {
+      height: 10rem;
+      padding: 1rem 1rem;
+      border: none;
+      resize: none;
+      border-radius: 8px;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__submit {
+      height: 4rem;
+      width: 15rem;
+      align-self: flex-end;
+
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background-color: a.$secondary--gold;
+
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        background-color: a.$secondary--orange;
+      }
+    }
+  }
+
+  &__img {
+    height: 100%;
+  }
+}
+
+// FORM BOX
