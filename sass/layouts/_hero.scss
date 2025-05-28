@@ -10,6 +10,7 @@
 
   @include a.respond(big-desktop) {
     width: 160rem;
+    margin-top: 5rem;
   }
   @include a.respond(tab-port) {
     flex-direction: column;
@@ -32,9 +33,6 @@
       margin-bottom: 1.6rem;
     }
 
-    @include a.respond(big-desktop) {
-      width: 100%;
-    }
     @include a.respond(phone) {
       width: 90%;
     }

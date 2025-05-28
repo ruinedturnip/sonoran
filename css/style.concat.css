@@ -954,6 +954,7 @@ html {
 @media only screen and (min-width: 112.5em) {
   .hero {
     width: 160rem;
+    margin-top: 5rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -977,11 +978,6 @@ html {
 }
 .hero__textbox__heading {
   margin-bottom: 1.6rem;
-}
-@media only screen and (min-width: 112.5em) {
-  .hero__textbox {
-    width: 100%;
-  }
 }
 @media only screen and (max-width: 37.5em) {
   .hero__textbox {
