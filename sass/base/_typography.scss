@@ -87,6 +87,10 @@ html {
       color: a.$secondary--orange;
       font-size: a.$p-font-size;
 
+      @include a.respond(big-desktop) {
+        font-size: a.$p-font-size-large;
+      }
+
       @include a.respond(tab-port) {
         font-size: a.$h3-font-size-small;
       }
@@ -122,6 +126,10 @@ html {
     &__subtext {
       color: inherit;
       font-size: a.$p-font-size;
+
+      @include a.respond(big-desktop) {
+        font-size: a.$p-font-size-large;
+      }
 
       @include a.respond(tab-port) {
         font-size: a.$h3-font-size-small;
