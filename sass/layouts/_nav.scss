@@ -10,6 +10,11 @@
   z-index: 15;
   // position: relative;
 
+  @include a.respond(big-desktop) {
+    width: 160rem;
+    margin-top: 5rem;
+  }
+
   @include a.respond(tab-port) {
     margin-left: 5rem;
   }

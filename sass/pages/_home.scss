@@ -7,7 +7,11 @@
     height: 95vh;
 
     @include a.respond(tab-land) {
-      height: 125vh;
+      height: 80vh;
+    }
+
+    @include a.respond(tab-port) {
+      height: 100vh;
     }
 
     @include a.respond(phone) {
