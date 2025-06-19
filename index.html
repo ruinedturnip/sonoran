@@ -12,13 +12,18 @@
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
-    <link 
-      rel="preload" 
-      as="image" 
-      href="https://sonoranstudios.com/imgs/home/mobile/hero-mobile.webp"
-      type="image/webp" 
-      media="(max-width: 649px)" 
-      fetchpriority="high">
+<link
+  rel="preload"
+  as="image"
+  href="https://sonoranstudios.com/imgs/home/mobile/hero-mobile.webp"
+  type="image/webp"
+  fetchpriority="high">
+<link
+  rel="preload"
+  as="image"
+  href="https://sonoranstudios.com/imgs/home/desktop/hero.webp"
+  type="image/webp"
+  media="(min-width: 650px)">
     <script defer
       src="https://kit.fontawesome.com/0ae45b2d7e.js"
       crossorigin="anonymous"
@@ -55,7 +60,15 @@
         height: auto;
       }
     </style>
-    <link rel="stylesheet" href="css/style.css" />
+ <link
+  rel="stylesheet"
+  href="css/style.css"
+  media="print"
+  onload="this.media='all'"
+/>
+<noscript>
+  <link rel="stylesheet" href="css/style.css">
+</noscript>
 <!-- 
     <link rel="stylesheet" href="queries/mobile-home.css"/> -->
     <title>Sonoran Studios Web Development</title>
