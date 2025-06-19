@@ -898,6 +898,12 @@ html {
   margin: 0 auto;
   z-index: 15;
 }
+@media only screen and (min-width: 112.5em) {
+  .nav {
+    width: 160rem;
+    margin-top: 5rem;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .nav {
     margin-left: 5rem;
@@ -2491,7 +2497,12 @@ html {
 }
 @media only screen and (max-width: 75em) {
   .section__landing {
-    height: 125vh;
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section__landing {
+    height: 100vh;
   }
 }
 @media only screen and (max-width: 37.5em) {
