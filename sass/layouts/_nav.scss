@@ -1,80 +1,79 @@
-@use "../abstracts/" as a;
+@use '../abstracts/' as a;
 
 .nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-  height: 7rem;
-  margin: 0 auto;
-  z-index: 15;
-  // position: relative;
+	height: 7rem;
+	margin: 0 auto;
+	z-index: 15;
+	// position: relative;
 
-  @include a.respond(big-desktop) {
-    width: 160rem;
-    margin-top: 5rem;
-  }
+	@include a.respond(big-desktop) {
+		width: 160rem;
+	}
 
-  @include a.respond(tab-port) {
-    margin-left: 5rem;
-  }
+	@include a.respond(tab-port) {
+		margin-left: 5rem;
+	}
 
-  //   Logo
-  &__logo {
-    // font-size: 2.4rem;
+	//   Logo
+	&__logo {
+		// font-size: 2.4rem;
 
-    @include a.respond(phone-small) {
-      padding-top: 1rem;
-    }
-  }
+		@include a.respond(phone-small) {
+			padding-top: 1rem;
+		}
+	}
 
-  //   the unordered list
-  &__links {
-    display: flex;
-    align-items: center;
-    gap: 3.6rem;
-    list-style: none;
-    z-index: inherit;
-  }
+	//   the unordered list
+	&__links {
+		display: flex;
+		align-items: center;
+		gap: 3.6rem;
+		list-style: none;
+		z-index: inherit;
+	}
 
-  &__link {
-    border-bottom: 2px solid clear;
+	&__link {
+		border-bottom: 2px solid clear;
 
-    &--active {
-      border-bottom: 2px solid a.$secondary--orange;
-    }
-  }
+		&--active {
+			border-bottom: 2px solid a.$secondary--orange;
+		}
+	}
 
-  &__link--active {
-    border-bottom: 2px solid a.$secondary--orange;
-  }
+	&__link--active {
+		border-bottom: 2px solid a.$secondary--orange;
+	}
 
-  &__mobile {
-    position: fixed;
-    right: 5rem;
-    top: 3rem;
-    z-index: 60;
-    align-items: center;
-    justify-content: center;
+	&__mobile {
+		position: fixed;
+		right: 5rem;
+		top: 3rem;
+		z-index: 60;
+		align-items: center;
+		justify-content: center;
 
-    cursor: pointer;
+		cursor: pointer;
 
-    &__bar {
-      height: 3px;
-      width: 3rem;
-      background-color: #000;
-      z-index: 5;
+		&__bar {
+			height: 3px;
+			width: 3rem;
+			background-color: #000;
+			z-index: 5;
 
-      &--1 {
-        margin-bottom: 5px;
-      }
-      &--2 {
-        margin-bottom: 5px;
-      }
-      &--3 {
-      }
-    }
-  }
+			&--1 {
+				margin-bottom: 5px;
+			}
+			&--2 {
+				margin-bottom: 5px;
+			}
+			&--3 {
+			}
+		}
+	}
 }
 
 //
