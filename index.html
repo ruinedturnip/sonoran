@@ -12,6 +12,13 @@
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
 />
+    <link 
+      rel="preload" 
+      as="image" 
+      href="imgs/home/mobile/hero-mobile.webp" 
+      type="image/webp" 
+      media="(max-width: 649px)" 
+      fetchpriority="high">
     <script defer
       src="https://kit.fontawesome.com/0ae45b2d7e.js"
       crossorigin="anonymous"
@@ -98,16 +105,18 @@
               <div class="hero__imgs">
   
                 <div class="hero__imgbox">
-                  <picture>
+                  <picture> 
                     <source media="(min-width: 650px)" srcset="imgs/home/desktop/hero.webp">
                     <source media="(min-width: 300px)" srcset="imgs/home/mobile/hero-mobile.webp">
                     <img
-                    src="imgs/home/desktop/hero.webp"
-                    class="hero__img"
-                    alt="man at computer"
-                    
+                      src="imgs/home/desktop/hero.webp"
+                      class="hero__img"
+                      alt="man at computer"
+                      fetchpriority="high"
+                      loading="eager"
+                      decoding="async"
                     />
-                    </picture>
+                  </picture>
                 </div>
           
           </div>
