@@ -369,6 +369,16 @@ html {
   font-size: 19px;
   text-align: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .cards__text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .cards__text {
+    font-size: 15px;
+  }
+}
 
 .card__header {
   color: #f7f7ff;
@@ -2876,6 +2886,26 @@ html {
 .cards__textbox {
   width: clamp(90rem, 60vw, 110rem);
   margin: 0 auto;
+}
+@media only screen and (max-width: 75em) {
+  .cards__textbox {
+    margin-bottom: 8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .cards__textbox {
+    width: clamp(60rem, 60vw, 90rem);
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .cards__textbox {
+    width: clamp(30rem, 60vw, 50rem);
+    margin-bottom: 0rem;
+  }
+}
+.cards__text {
+  margin-top: 2rem;
 }
 
 .card {

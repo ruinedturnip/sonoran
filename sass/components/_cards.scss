@@ -24,6 +24,24 @@
     width: clamp(90rem, 60vw, 110rem);
     // margin-top: ;
     margin: 0 auto;
+
+    @include a.respond(tab-land) {
+      margin-bottom: 8rem;
+    }
+
+    @include a.respond(tab-port) {
+      width: clamp(60rem, 60vw, 90rem);
+      margin-bottom: 0rem;
+    }
+
+    @include a.respond(phone) {
+      width: clamp(30rem, 60vw, 50rem);
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__text {
+    margin-top: 2rem;
   }
 }
 .card {

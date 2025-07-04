@@ -420,6 +420,14 @@ html {
   &__text {
     font-size: a.$p-font-size-large;
     text-align: center;
+
+    @include a.respond(tab-port) {
+      font-size: a.$p-font-size-small;
+    }
+
+    @include a.respond(phone) {
+      font-size: a.$p-font-size;
+    }
   }
 }
 .card {
