@@ -365,6 +365,11 @@ html {
   color: rgb(246, 170, 28);
 }
 
+.cards__text {
+  font-size: 19px;
+  text-align: center;
+}
+
 .card__header {
   color: #f7f7ff;
   font-size: 19px;
@@ -621,6 +626,9 @@ html {
 .qualities__icon__title {
   font-size: 2.4rem;
   color: rgb(48, 105, 178);
+}
+.qualities__header--blue {
+  color: rgb(1, 109, 225);
 }
 
 .services__hero {
@@ -2738,7 +2746,7 @@ html {
 }
 
 .section__portfolio--p {
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 10rem;
 }
 
@@ -2864,6 +2872,10 @@ html {
   .cards {
     flex-direction: column;
   }
+}
+.cards__textbox {
+  width: clamp(90rem, 60vw, 110rem);
+  margin: 0 auto;
 }
 
 .card {

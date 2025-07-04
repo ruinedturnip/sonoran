@@ -417,6 +417,10 @@ html {
 // CARDS
 
 .cards {
+  &__text {
+    font-size: a.$p-font-size-large;
+    text-align: center;
+  }
 }
 .card {
   &__header {
@@ -709,6 +713,10 @@ html {
   &__icon__title {
     font-size: a.$h4-font-size;
     color: a.$secondary--blue;
+  }
+
+  &__header--blue {
+    color: a.$primary--blue;
   }
 }
 

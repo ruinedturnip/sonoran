@@ -19,6 +19,12 @@
     // grid-template-columns: repeat(1, 1fr);
     // grid-template-row: repeat(2, 1fr);
   }
+
+  &__textbox {
+    width: clamp(90rem, 60vw, 110rem);
+    // margin-top: ;
+    margin: 0 auto;
+  }
 }
 .card {
   width: 30%;
