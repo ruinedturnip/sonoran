@@ -1,168 +1,169 @@
-@use '../abstracts/' as a;
+@use "../abstracts/" as a;
 
 .hero {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 auto;
-	// z-index: -10;
-	// margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  // z-index: -10;
+  // margin-top: 1rem;
+  padding-bottom: 5rem;
 
-	@include a.respond(big-desktop) {
-		width: 160rem;
-		margin-top: 5rem;
-		flex-direction: row;
-	}
+  @include a.respond(big-desktop) {
+    width: 160rem;
+    // margin-top: 5rem;
+    flex-direction: row;
+  }
 
-	@include a.respond(desktop) {
-		flex-direction: row;
-	}
+  @include a.respond(desktop) {
+    flex-direction: row;
+  }
 
-	@include a.respond(tab-land) {
-		flex-direction: row;
-	}
+  @include a.respond(tab-land) {
+    flex-direction: row;
+  }
 
-	@include a.respond(tab-port) {
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-top: 5rem;
-	}
-	@include a.respond(phone) {
-		margin-top: 2rem;
-	}
+  @include a.respond(tab-port) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+  @include a.respond(phone) {
+    margin-top: 2rem;
+  }
 
-	&__textbox {
-		width: 80%;
+  &__textbox {
+    width: 80%;
 
-		&__pretext {
-			margin-bottom: 1rem;
-		}
+    &__pretext {
+      margin-bottom: 1rem;
+    }
 
-		&__heading {
-			margin-bottom: 1.6rem;
-		}
+    &__heading {
+      margin-bottom: 1.6rem;
+    }
 
-		@include a.respond(phone) {
-			width: 90%;
-		}
+    @include a.respond(phone) {
+      width: 90%;
+    }
 
-		@include a.respond(phone-small) {
-			width: 90%;
-		}
-	}
+    @include a.respond(phone-small) {
+      width: 90%;
+    }
+  }
 
-	&__imgs {
-		display: flex;
-		align-items: center;
-		justify-content: end;
-		width: 100%;
-		height: 100%;
+  &__imgs {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
 
-		z-index: inherit;
-		// grid-template-columns: repeat(2, 1fr);
-		// grid-template-rows: repeat(2, 1fr);
-		// gap: 2rem;
+    z-index: inherit;
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // gap: 2rem;
 
-		@include a.respond(tab-land) {
-			justify-content: start;
-		}
+    @include a.respond(tab-land) {
+      justify-content: start;
+    }
 
-		@include a.respond(tab-port) {
-			justify-content: center;
-			margin-top: 5rem;
-		}
+    @include a.respond(tab-port) {
+      justify-content: center;
+      margin-top: 5rem;
+    }
 
-		@include a.respond(phone) {
-			margin-bottom: 15rem;
-		}
-	}
+    @include a.respond(phone) {
+      margin-bottom: 15rem;
+    }
+  }
 
-	&__imgbox {
-		width: 60rem;
-		height: 50rem;
+  &__imgbox {
+    width: 60rem;
+    height: 50rem;
 
-		@include a.respond(big-desktop) {
-			width: 80rem;
-			height: 60rem;
-		}
+    @include a.respond(big-desktop) {
+      width: 80rem;
+      height: 60rem;
+    }
 
-		@include a.respond(tab-land) {
-			width: 40rem;
-			height: 30rem;
-		}
-	}
+    @include a.respond(tab-land) {
+      width: 40rem;
+      height: 30rem;
+    }
+  }
 
-	&__img {
-		width: 100%;
-		height: 100%;
-		// background-size: cover;
-		// background-position: bottom;
-		// background-image: url("/imgs/home/desktop/hero.webp");
-		transform: translateY(-10rem);
-		z-index: -5;
+  &__img {
+    width: 100%;
+    height: 100%;
+    // background-size: cover;
+    // background-position: bottom;
+    // background-image: url("/imgs/home/desktop/hero.webp");
+    transform: translateY(-10rem);
+    z-index: -5;
 
-		@include a.respond(big-desktop) {
-			height: 150%;
-			width: 150%;
-		}
-		@include a.respond(tab-land) {
-			transform: translate(7rem, -5rem);
-			width: 40rem;
-			height: 40rem;
-		}
-		@include a.respond(tab-port) {
-			transform: translateY(-10rem);
-		}
+    @include a.respond(big-desktop) {
+      height: 150%;
+      width: 150%;
+    }
+    @include a.respond(tab-land) {
+      transform: translate(7rem, -5rem);
+      width: 40rem;
+      height: 40rem;
+    }
+    @include a.respond(tab-port) {
+      transform: translateY(-10rem);
+    }
 
-		// @include a.respond(phone) {
-		//   background-image: url("/imgs/home/mobile/hero-mobile.webp");
-		// }
-	}
+    // @include a.respond(phone) {
+    //   background-image: url("/imgs/home/mobile/hero-mobile.webp");
+    // }
+  }
 }
 
 .about {
-	position: relative;
-	&__hero {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+  position: relative;
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .services {
-	position: relative;
-	&__hero {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+  position: relative;
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-		text-align: center;
-	}
+    text-align: center;
+  }
 }
 
 .contact {
-	position: relative;
-	&__hero {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+  position: relative;
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-		text-align: center;
-	}
+    text-align: center;
+  }
 }

@@ -18,10 +18,10 @@
       href="https://sonoranstudios.com/imgs/home/mobile/hero-mobile.webp"
       type="image/webp" 
       fetchpriority="high">
-    <script defer
+    <!-- <script defer
       src="https://kit.fontawesome.com/0ae45b2d7e.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <style>
       .hero {
         display: flex;
@@ -64,57 +64,61 @@
     ///////////                     LANDING                  /////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////// -->
     <main>
-     <section class="section section__landing">
-        <nav class="container nav">
+     <section class="section section__landing section__nav">
+        <div class="container">
+          <nav class="nav">
+
             <a href="#" class="nav__logo">Sonoran Studios</a>
-              <ul class="nav__links " id="navList">
-                <li class="nav__link nav__link--active" id="nav-1">
-                  <a class="nav__link-nav" href="index.html">Home</a>
+            <ul class="nav__links " id="navList">
+              <li class="nav__link nav__link--active" id="nav-1">
+                <a class="nav__link-nav" href="index.html">Home</a>
+              </li>
+              <li class="nav__link" id="nav-2">
+                <a class="nav__link-nav" href="about.html">About</a>
+              </li>
+              <li class="nav__link" id="nav-3">
+                <a class="nav__link-nav" href="services.html">Services</a>
+              </li>
+              <li class="nav__link" id="nav-4">
+                <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav__link" id="nav-4">
+                <a class="nav__link-nav" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          
+          <div class="nav__mobile hide" id="menuBars">
+            <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
+            <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
+          </div>
+          
+          <div class="mobile hide" id="overlay">
+            <ul class="mobile__links " id="navList">
+              <li class="mobile__link">
+                <h2 class="mobile__link--title" >Sonoran Studios</a>
                 </li>
-                <li class="nav__link" id="nav-2">
-                  <a class="nav__link-nav" href="about.html">About</a>
+                <li class="mobile__link mobile__link--active" id="nav-1">
+                  <a class="mobile__link--nav" href="index.html">Home</a>
                 </li>
-                <li class="nav__link" id="nav-3">
-                  <a class="nav__link-nav" href="services.html">Services</a>
+                <li class="mobile__link" id="nav-2">
+                  <a class="mobile__link--nav" href="about.html">About</a>
                 </li>
-                <li class="nav__link" id="nav-4">
-                  <a class="nav__link-nav" href="portfolio.html">Portfolio</a>
+                <li class="mobile__link" id="nav-3">
+                  <a class="mobile__link--nav" href="services.html">Services</a>
                 </li>
-                <li class="nav__link" id="nav-4">
-                  <a class="nav__link-nav" href="contact.html">Contact Us</a>
+                <li class="mobile__link" id="nav-4">
+                  <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="mobile__link" id="nav-4">
+                  <a class="mobile__link--nav" href="contact.html">Contact Us</a>
                 </li>
               </ul>
-
-              <div class="nav__mobile hide" id="menuBars">
-                <div class="nav__mobile__bar nav__mobile__bar--1" id="bar1"></div>
-                <div class="nav__mobile__bar nav__mobile__bar--2" id="bar2"></div>
-                <div class="nav__mobile__bar nav__mobile__bar--3" id="bar3"></div>
-              </div>
-        
-              <div class="mobile hide" id="overlay">
-                <ul class="mobile__links " id="navList">
-                  <li class="mobile__link">
-                    <h2 class="mobile__link--title" >Sonoran Studios</a>
-                  </li>
-                  <li class="mobile__link mobile__link--active" id="nav-1">
-                    <a class="mobile__link--nav" href="index.html">Home</a>
-                  </li>
-                  <li class="mobile__link" id="nav-2">
-                    <a class="mobile__link--nav" href="about.html">About</a>
-                  </li>
-                  <li class="mobile__link" id="nav-3">
-                    <a class="mobile__link--nav" href="services.html">Services</a>
-                  </li>
-                  <li class="mobile__link" id="nav-4">
-                    <a class="mobile__link--nav" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="mobile__link" id="nav-4">
-                    <a class="mobile__link--nav" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              
-          </nav>
+            </div>
+            
+          </div>
+        </div>
 
         
 
@@ -299,7 +303,9 @@
           <ul class="pricing__list">
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">24/7 Customer Service</h3>
             </div>
             <p class="pricing__list__text">
@@ -309,7 +315,9 @@
           </li>
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">Mobile Friendly</h3>
             </div>
             <p class="pricing__list__text">
@@ -318,7 +326,9 @@
           </li>
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">Customizeable</h3>
             </div>
             <p class="pricing__list__text">
@@ -327,7 +337,9 @@
           </li>
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">Optimized</h3>
             </div>
             <p class="pricing__list__text">
@@ -336,7 +348,9 @@
           </li>
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">Maintenance</h3>
             </div>
             <p class="pricing__list__text">
@@ -345,7 +359,9 @@
           </li>
           <li >
             <div class="pricing__list__row">
-              <i class="fa-solid fa-check pricing__icon"> </i>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+<path fill="#f6aa1c" d="M 42.964844 8.6894531 A 1.0001 1.0001 0 0 0 42.160156 9.1582031 L 21.699219 40.867188 L 7.671875 28.158203 A 1.0004048 1.0004048 0 1 0 6.328125 29.640625 L 21.228516 43.140625 A 1.0001 1.0001 0 0 0 22.740234 42.941406 L 43.839844 10.242188 A 1.0001 1.0001 0 0 0 42.964844 8.6894531 z"></path>
+</svg>
               <h3 class="pricing__list__heading">Build your online presence</h3>
             </div>
             <p class="pricing__list__text">

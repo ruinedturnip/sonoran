@@ -50,7 +50,7 @@ html {
   transition: all 0.3s;
 }
 .nav__link-nav:hover {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
 }
 
 .mobile__link--title {
@@ -75,7 +75,7 @@ html {
   }
 }
 .hero__textbox__pretext {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
   font-size: 15px;
 }
 @media only screen and (min-width: 112.5em) {
@@ -184,7 +184,7 @@ html {
   text-transform: uppercase;
 }
 .feature__header {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 2.4rem;
@@ -220,7 +220,7 @@ html {
   color: #f7f7ff;
 }
 .pricing__heading span {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
 }
 @media only screen and (max-width: 75em) {
   .pricing__heading {
@@ -256,7 +256,7 @@ html {
   }
 }
 .pricing__list__heading {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
   font-size: 17px;
 }
 @media only screen and (max-width: 75em) {
@@ -355,14 +355,14 @@ html {
 .about__button {
   text-decoration: none;
   font-size: 19px;
-  border-bottom: 2px solid rgb(246, 170, 28);
+  border-bottom: 2px solid #f6aa1c;
   color: rgb(48, 105, 178);
   text-transform: uppercase;
   font-weight: 700;
   transition: all 0.3s;
 }
 .about__button:hover {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
 }
 
 .cards__text {
@@ -410,7 +410,7 @@ html {
   color: #f7f7ff;
 }
 .card__button--fill:hover {
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
 }
 .card__subprice {
   font-size: 19px;
@@ -711,7 +711,7 @@ html {
 }
 .contact__form__button__label {
   font-size: 15px;
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
   font-weight: 500;
 }
 .contact__form__button__label span {
@@ -780,7 +780,7 @@ html {
 }
 .modal__form__button__label {
   font-size: 15px;
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
   font-weight: 500;
 }
 .modal__form__button__label span {
@@ -942,10 +942,10 @@ html {
   border-bottom: 2px solid clear;
 }
 .nav__link--active {
-  border-bottom: 2px solid rgb(246, 170, 28);
+  border-bottom: 2px solid #f6aa1c;
 }
 .nav__link--active {
-  border-bottom: 2px solid rgb(246, 170, 28);
+  border-bottom: 2px solid #f6aa1c;
 }
 .nav__mobile {
   position: fixed;
@@ -973,11 +973,11 @@ html {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
 @media only screen and (min-width: 112.5em) {
   .hero {
     width: 160rem;
-    margin-top: 5rem;
     flex-direction: row;
   }
 }
@@ -1491,7 +1491,7 @@ html {
 }
 .pricing__icon {
   font-size: 3.2rem;
-  color: rgb(246, 170, 28);
+  color: #f6aa1c;
 }
 
 .portfolio__container {
@@ -2125,7 +2125,7 @@ html {
   content: "";
   width: 43rem;
   height: 60rem;
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
   position: absolute;
   bottom: -1rem;
   left: -1rem;
@@ -2198,7 +2198,7 @@ html {
   content: "";
   width: 40rem;
   height: 40rem;
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
   position: absolute;
   bottom: -1rem;
   left: -1rem;
@@ -2267,7 +2267,7 @@ html {
   content: "";
   width: 10rem;
   height: 10rem;
-  background: linear-gradient(to left, rgb(246, 170, 28), #f4c95d);
+  background: linear-gradient(to left, #f6aa1c, #f4c95d);
   opacity: 0.5;
   border-radius: 50%;
   position: absolute;
@@ -2441,7 +2441,7 @@ html {
   transition: all 0.3s;
 }
 .contact__form__submit:hover {
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
 }
 .contact__infobox {
   width: 50%;
@@ -2521,22 +2521,7 @@ html {
 .section__landing {
   position: relative;
   background-color: rgb(1, 109, 225);
-  height: 95vh;
-}
-@media only screen and (max-width: 75em) {
-  .section__landing {
-    height: 80vh;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .section__landing {
-    height: 100vh;
-  }
-}
-@media only screen and (max-width: 37.5em) {
-  .section__landing {
-    height: 100%;
-  }
+  height: 100%;
 }
 .section__what-we-do {
   background-color: #f7f7ff;
@@ -2850,7 +2835,7 @@ html {
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.2);
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2939,7 +2924,7 @@ html {
   justify-content: center;
 }
 .card__header--2 {
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
 }
 .card__pricing {
   text-align: center;
@@ -2975,8 +2960,8 @@ html {
   background-color: rgb(48, 105, 178);
 }
 .card__button--fill {
-  background-color: rgb(246, 170, 28);
-  border: 2px solid rgb(246, 170, 28);
+  background-color: #f6aa1c;
+  border: 2px solid #f6aa1c;
 }
 .card__button--fill:hover {
   background-color: #f7f7ff;
@@ -3138,7 +3123,7 @@ html {
   transition: all 0.3s;
 }
 .modal__form__submit:hover {
-  background-color: rgb(246, 170, 28);
+  background-color: #f6aa1c;
 }
 .modal__img {
   height: 100%;
